@@ -90,3 +90,19 @@ never copy stories, characters or signature visuals from other channels.
 - Supporting characters: same body shape in grey or tan, each with ONE simple accessory
   (e.g. an orange scarf). Never beanies.
 - Counter (HUD): top-left, small clean font, changes at key story moments.
+
+## YouTube titles and thumbnails
+- Title: short, blunt and personal, ending with a period. Use one of two forms:
+  - A statement aimed at the viewer: "Your Phone Is Stealing Your Life." /
+    "Motivation Will Fail You." / "You're Not Lazy. You're Too Comfortable."
+  - ONE strong word + "| An Animated Short Film": "LONELINESS | An Animated Short Film".
+- Thumbnail (1280x720):
+  - 1-3 huge words at the top in bold white text with a thick black outline, ending
+    with "." or "?" (e.g. "STILL SCROLLING?", "WAKE UP.").
+  - Below it: a big close-up of the hero with one strong, exaggerated emotion (wide eyes,
+    sweat drop, eye bags, tears) - his face fills a big part of the frame.
+  - Near-black background, ONE strong light source (phone glow, lamp, window), and
+    ONE symbolic prop from the story (phone, book, alarm clock...).
+  - Text and image must say the same idea; readable on a phone screen.
+- Learn from other channels' title/thumbnail PATTERNS only. Never copy their stories,
+  characters, fonts or signature visuals. Never use self-harm, drugs or graphic images.
