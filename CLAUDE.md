@@ -25,6 +25,8 @@ These rules apply to every video made in this project.
 ## Text on screen
 
 - No voiceover and no spoken words, ever. Characters never speak out loud.
+  Exception for sound design only: dark, low, ghost-like whispers or echoes may be used for
+  scary/inner-voice moments, as long as no words can be understood (generated, not a real voice).
 - **Bottom caption = the narrator.**
   - Always third person ("He...").
   - Short: 2-7 words.
@@ -76,6 +78,12 @@ never copy stories, characters or signature visuals from other channels.
 - For each part list: shots with timings, bottom captions, head pills, counter values,
   sound effects, and "MUSIC: <mood>" or "MUSIC: none".
 - Build and check ONE part at a time, then join all parts into one full composition.
+- Pacing: cut to a new scene or camera angle (wide / close-up / insert) every 3-5 seconds.
+  Only the hook and the biggest emotional moments may hold longer (max ~8 s). Never drag
+  a shot just to fill time.
+- Every video uses NEW locations and sets. Never reuse a location from an earlier video
+  (e.g. if one video had a metro, the next one must not). Give each story a surprise or
+  twist, not just a straight sad-to-happy line.
 
 ## Visual style
 - 1920x1080, 30fps, thin black letterbox bars, soft film grain, subtle vignette,
