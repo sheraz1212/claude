@@ -67,7 +67,7 @@ masks piling up, worries becoming balloons).
 - Music: where music appears and which mood (8-bit, dark piano/cello, orchestra, guitar).
 - End: the final message, max 5 words.
 Rules for ideas: every idea must be understandable without words; one main character;
-max 3-5 locations; a clear low point and one tiny honest decision that turns it around;
+6-8 different locations; a clear low point and one tiny honest decision that turns it around;
 never copy stories, characters or signature visuals from other channels.
 
 ## How to write a story outline (after I pick an idea)
@@ -78,6 +78,9 @@ never copy stories, characters or signature visuals from other channels.
 - For each part list: shots with timings, bottom captions, head pills, counter values,
   sound effects, and "MUSIC: <mood>" or "MUSIC: none".
 - Build and check ONE part at a time, then join all parts into one full composition.
+- The outline must have about 40+ distinct shots (a new beat every 3-5 s), so scenes change
+  on their own and nothing drags.
+- Deliver ONLY the final joined video, once, in high quality. Do not send single parts.
 - Pacing: cut to a new scene or camera angle (wide / close-up / insert) every 3-5 seconds.
   Only the hook and the biggest emotional moments may hold longer (max ~8 s). Never drag
   a shot just to fill time.
