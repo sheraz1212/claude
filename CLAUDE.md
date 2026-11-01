@@ -81,6 +81,9 @@ never copy stories, characters or signature visuals from other channels.
 - The outline must have about 40+ distinct shots (a new beat every 3-5 s), so scenes change
   on their own and nothing drags.
 - Deliver ONLY the final joined video, once, in high quality. Do not send single parts.
+- Framing: default to wide, full-body and medium (waist-up) shots like the first video.
+  Always show his whole head with space above it; never cut off the top of the head.
+  No shots of only legs, feet or hands. Close-ups only for big emotions, and still head + shoulders.
 - Think like a film director. Before building a clip, write its shot list with the angle
   AND the reason for it: wide = show the place, close-up = show emotion, insert = show a
   detail, over-the-shoulder / POV = show what he sees. Never repeat the same framing twice
