@@ -71,7 +71,7 @@ Rules for ideas: every idea must be understandable without words; one main chara
 never copy stories, characters or signature visuals from other channels.
 
 ## How to write a story outline (after I pick an idea)
-- About 3 minutes, split into 6 parts of 25-45 seconds:
+- About 3-4 minutes, built from 6-8 clips of 30-35 seconds each:
   1 Hook + establish, 2 Routine montage (the habit repeating, fast cuts),
   3 Contrast (others doing better), 4 Low point (darkest, slowest, near silence),
   5 Tiny decision (warmth returns), 6 Warm ending + end card.
@@ -81,6 +81,12 @@ never copy stories, characters or signature visuals from other channels.
 - The outline must have about 40+ distinct shots (a new beat every 3-5 s), so scenes change
   on their own and nothing drags.
 - Deliver ONLY the final joined video, once, in high quality. Do not send single parts.
+- Think like a film director. Before building a clip, write its shot list with the angle
+  AND the reason for it: wide = show the place, close-up = show emotion, insert = show a
+  detail, over-the-shoulder / POV = show what he sees. Never repeat the same framing twice
+  in a row, never crop a character awkwardly, and move the camera only when it means something.
+- Special sound effects (e.g. the dark whisper) are spices: use them at only 1-2 key moments
+  per video. Everywhere else use quiet, natural sound or silence.
 - Pacing: cut to a new scene or camera angle (wide / close-up / insert) every 3-5 seconds.
   Only the hook and the biggest emotional moments may hold longer (max ~8 s). Never drag
   a shot just to fill time.
