@@ -4,6 +4,11 @@ These rules apply to every video made in this project.
 
 ## Music
 
+- Music works in CUES, like a film score: a cue starts when a scene needs feeling and stops
+  after it (a few seconds to ~30 s), with breathing room between cues. Long silent stretches
+  feel dead, so emotional beats always get something: a single dark low note (piano, cello,
+  any instrument) for a hurtful moment, a bass/low-piano impact hit for a shock (a door
+  shutting, bad news), a soft BGM under work or montage scenes.
 - Background music does NOT play through the whole video. Use it only where the
   story needs it: energy, motivation, emotion, or a big moment. Everywhere else,
   use only sound effects or silence.
