@@ -85,6 +85,10 @@ never copy stories, characters or signature visuals from other channels.
   AND the reason for it: wide = show the place, close-up = show emotion, insert = show a
   detail, over-the-shoulder / POV = show what he sees. Never repeat the same framing twice
   in a row, never crop a character awkwardly, and move the camera only when it means something.
+- Sound design: a sound plays only when something happens on screen (a tray rattles, a chair
+  scrapes, a cup is crushed). Never loop an ambience or effect under a whole clip like music;
+  room tone may only fade in briefly at the start of a new location. Build a varied sound
+  library for each story; re-using a sound is fine, but not the same few sounds everywhere.
 - Special sound effects (e.g. the dark whisper) are spices: use them at only 1-2 key moments
   per video. Everywhere else use quiet, natural sound or silence.
 - Pacing: cut to a new scene or camera angle (wide / close-up / insert) every 3-5 seconds.
