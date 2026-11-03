@@ -40,7 +40,7 @@ These rules apply to every video made in this project.
   ("Lazy isn't who you are. It's what you repeat."), on a dark screen or a spotlight.
 - **Head text = words said or thought by or to a character.**
   - His own thoughts, what he tells himself, or what another character says to him.
-  - Small white text just above the speaker's head (beside it in close-ups), on a black
+  - Big, clear white text (~60px) just above the speaker's head (beside it in close-ups), on a black
     capsule at only ~10% opacity - just a soft shadow behind the words, never a solid pill.
   - Short: 2-5 words.
 - **Words as visuals:** the inner voice / temptation may appear as big words inside the
