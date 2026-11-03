@@ -27,8 +27,9 @@ These rules apply to every video made in this project.
 ## Text on screen
 
 - No voiceover and no spoken words, ever. Characters never speak out loud.
-  Exception for sound design only: dark, low, ghost-like whispers may be used for
-  inner-voice moments, as long as no words can be understood.
+  Only exception: the inner voice. It sounds like a thought, not a person: a very soft,
+  dark, low-pitched, ghost-like whisper that echoes and rings, slowly saying its short
+  lines ("one more.", "tomorrow."). Use it only when the inner voice appears.
 - **Bottom caption = the narrator.** It carries the story like a short poem.
   - Always third person ("He...").
   - Short: 2-7 words, simple sentences ("He had friends." "Then he found it." "It felt good.").
