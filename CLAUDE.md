@@ -2,130 +2,130 @@
 
 These rules apply to every video made in this project.
 
-## Music
+## Music and sound
 
-- Music works in CUES, like a film score: a cue starts when a scene needs feeling and stops
-  after it (a few seconds to ~30 s), with breathing room between cues. Long silent stretches
-  feel dead, so emotional beats always get something: a single dark low note (piano, cello,
-  any instrument) for a hurtful moment, a bass/low-piano impact hit for a shock (a door
-  shutting, bad news), a soft BGM under work or montage scenes.
-- Background music does NOT play through the whole video. Use it only where the
-  story needs it: energy, motivation, emotion, or a big moment. Everywhere else,
-  use only sound effects or silence.
+- The score plays through the WHOLE video, like a film score, and changes with every scene
+  (light theme for normal life, sneaky/comic for the habit, dark piano/cello for pain, impact
+  hits for shocks, orchestral swell for turning points, warm guitar/piano for hope).
+  Only short silences of 1-3 s, and only on purpose (right before a big moment).
+- Mix it loud and full: overall mean volume around -16 dB (never quiet or "dead").
 - Match the music to the mood:
   - Energetic / motivated moments (training, running, starting work): fast retro
-    8-bit chiptune.
+    8-bit chiptune or driving drums.
   - Emotional / sad moments: dark, low-key piano and cello.
   - Big turning points: orchestral swell, bass drop, impact hits.
   - Soft, hopeful moments: acoustic guitar, light piano.
+- Sound effects play only when something happens on screen (a tray rattles, a door slams,
+  a cup is crushed). Build a varied sound library for each story.
+- Special effects (e.g. a dark whisper) are spices: only 1-2 key moments per video.
 - Generate all music and sound effects with Python. Save music in `public/music/`
   and sound effects in `public/sfx/`, with clear mood names (for example
   `energy-8bit.wav`, `sad-piano.wav`), so any file can be replaced later.
-- Never copy melodies from real games, films or songs (for example Super Mario).
-  Write only original music in a similar style, to avoid copyright claims.
-- Every story outline must state the music for each part, for example
-  `MUSIC: energy-8bit` or `MUSIC: none`. Follow it exactly. Never add music that
-  the outline does not ask for.
+- Never copy melodies from real games, films or songs. Write only original music.
+- Every outline states the music for each scene, e.g. `MUSIC: sad-piano`.
 
 ## Text on screen
 
 - No voiceover and no spoken words, ever. Characters never speak out loud.
-  Exception for sound design only: dark, low, ghost-like whispers or echoes may be used for
-  scary/inner-voice moments, as long as no words can be understood (generated, not a real voice).
-- **Bottom caption = the narrator.**
+  Exception for sound design only: dark, low, ghost-like whispers may be used for
+  inner-voice moments, as long as no words can be understood.
+- **Bottom caption = the narrator.** It carries the story like a short poem.
   - Always third person ("He...").
-  - Short: 2-7 words.
-  - Describes what is happening, or his situation.
-  - Used often, but not in every shot.
+  - Short: 2-7 words, simple sentences ("He had friends." "Then he found it." "It felt good.").
+  - Used in almost every shot.
   - Bottom centre, Patrick Hand font, warm cream, no background box.
-    One key word may be highlighted.
+    One key word may be highlighted in the video's accent colour.
+- **Wisdom lines:** at the turning point, 2-3 short, quotable lines
+  ("Lazy isn't who you are. It's what you repeat."), on a dark screen or a spotlight.
 - **Head text = words said or thought by or to a character.**
-  - His own thoughts ("I'm tired."), what he tells himself, or what another
-    character says to him.
-  - Always the same style: a small rounded pill just above the speaker's head.
+  - His own thoughts, what he tells himself, or what another character says to him.
+  - A small rounded pill just above the speaker's head (beside it in close-ups).
   - Short: 2-5 words.
-  - If there is no room above the head (close-ups), place the pill beside the head.
-- Bottom captions and head pills must always look clearly different from each other.
+- **Words as visuals:** the inner voice / temptation may appear as big words inside the
+  scene that the hero can fight (punch them, walk through them, break them).
+- Phones show realistic short messages ("ball tomorrow?", "can't.", "u good bro?").
+- Bottom captions, head pills and big words must always look clearly different.
 
-## Story opening and breaks
+## Story opening and ending
 
-- Every story opens with a hook: a black screen with one short line centred in
-  the middle, then the first scene.
-- A black screen with one centred line may also be used mid-story as a chapter
-  break, but only when it helps the story.
+- Every story opens with a hook: a black screen with one short line centred in the
+  middle, with ONE key word highlighted in the accent colour, then the first scene.
+- A black screen with one centred line may be used mid-story as a chapter break.
+- The last scene mirrors the first scene (same place, same shot) but changed.
 - Every video ENDS on a black screen with one short lesson for the viewer (max ~6 words),
-  e.g. "Call while you can." It is the takeaway of the whole story, not a summary.
-- Vary the story TYPE from video to video (mystery, comedy mockumentary, reverse story,
-  fantasy, sci-fi, bottle story...). A counter is optional: use it only when it fits.
+  e.g. "Call while you can." It is the takeaway of the whole story.
 
 ## Channel concept
-- Silent 2D animated short films for a US audience, 2-3+ minutes, landscape.
+- Silent 2D animated short films for a US audience, 2:40-3:30 long, landscape.
 - Topics: modern everyday struggles young adults relate to: phone/gaming/social media habits,
   procrastination, perfectionism, comparison, loneliness, people-pleasing, overthinking,
-  health habits, self-doubt, quitting bad habits.
-- Tone: emotional and motivational. Always ends with quiet hope, never dark or graphic.
-  No preaching.
+  health habits, self-doubt, quitting bad habits (sensitive habits are fine if never shown
+  directly - only hinted with a colour, a glow or a symbol).
+- Tone: emotional and motivational. Always ends with quiet hope, never graphic.
+- Vary the story TYPE from video to video (mystery, comedy mockumentary, reverse story,
+  fantasy, sci-fi, bottle story...).
+
+## Signature character: the inner voice
+- The channel's recurring antagonist is the hero's own inner voice, made visible (our own
+  original design - never copy another channel's "shadow demon").
+- It appears in every video, says the same short lines again and again ("one more.",
+  "tomorrow.", "you deserve it."), grows stronger while the habit wins, gets weaker
+  ("Weaker.") as he fights back, and is finally broken or left behind.
 
 ## How to give story ideas
 When I ask for ideas, give 10 ORIGINAL ideas, each in this exact format:
 **N. Title** (2-3 words)
-One sentence: the struggle shown as ONE strong visual metaphor (e.g. notes filling a jar,
-masks piling up, worries becoming balloons).
-- Hook: the black-screen opening line, max 6 words, creates curiosity.
-- Counter: the top-left HUD that changes through the story (e.g. "TOMORROWS: 1 -> 212").
-- Music: where music appears and which mood (8-bit, dark piano/cello, orchestra, guitar).
-- End: the final message, max 5 words.
-Rules for ideas: every idea must be understandable without words; one main character;
-6-8 different locations; a clear low point and one tiny honest decision that turns it around;
-never copy stories, characters or signature visuals from other channels.
+One sentence: the struggle shown as ONE central image that changes through the story.
+- Hook: the black-screen opening line, max 6 words, one highlighted word.
+- Counter: optional (DAY 1 -> 340, NIGHT 1 -> 30...), only if it fits.
+- Accent colour: the one colour that means the habit/struggle in this video.
+- Music: how the score changes from scene to scene.
+- End: the final lesson, max 6 words.
+Rules for ideas: understandable without words; one main character; 3-4 core locations
+that come back again and again; a clear low point and one tiny honest decision that turns
+it around; vary the story type; never copy stories, characters or signature visuals.
 
 ## How to write a story outline (after I pick an idea)
-- About 3-4 minutes, built from 6-8 clips of 30-35 seconds each:
-  1 Hook + establish, 2 Routine montage (the habit repeating, fast cuts),
-  3 Contrast (others doing better), 4 Low point (darkest, slowest, near silence),
-  5 Tiny decision (warmth returns), 6 Warm ending + end card.
-- For each part list: shots with timings, bottom captions, head pills, counter values,
-  sound effects, and "MUSIC: <mood>" or "MUSIC: none".
-- Build and check ONE part at a time, then join all parts into one full composition.
-- The outline must have about 40+ distinct shots (a new beat every 3-5 s), so scenes change
-  on their own and nothing drags.
-- Deliver ONLY the final joined video, once, in high quality. Do not send single parts.
-- Framing: default to wide, full-body and medium (waist-up) shots like the first video.
-  Always show his whole head with space above it; never cut off the top of the head.
-  No shots of only legs, feet or hands. Close-ups only for big emotions, and still head + shoulders.
-- Think like a film director. Before building a clip, write its shot list with the angle
-  AND the reason for it: wide = show the place, close-up = show emotion, insert = show a
-  detail, over-the-shoulder / POV = show what he sees. Never repeat the same framing twice
-  in a row, never crop a character awkwardly, and move the camera only when it means something.
-- Sound design: a sound plays only when something happens on screen (a tray rattles, a chair
-  scrapes, a cup is crushed). Never loop an ambience or effect under a whole clip like music;
-  room tone may only fade in briefly at the start of a new location. Build a varied sound
-  library for each story; re-using a sound is fine, but not the same few sounds everywhere.
-- Special sound effects (e.g. the dark whisper) are spices: use them at only 1-2 key moments
-  per video. Everywhere else use quiet, natural sound or silence.
-- Pacing: cut to a new scene or camera angle (wide / close-up / insert) every 3-5 seconds.
-  Only the hook and the biggest emotional moments may hold longer (max ~8 s). Never drag
-  a shot just to fill time.
-- Every video uses NEW locations and sets. Never reuse a location from an earlier video
-  (e.g. if one video had a metro, the next one must not). Give each story a surprise or
-  twist, not just a straight sad-to-happy line.
+- 2:40-3:30, built from 5-6 clips of 30-35 seconds each.
+- Structure: hook + normal life -> the habit starts -> the habit repeats (same shot again
+  and again, counter jumping) -> the cost -> low point -> wisdom lines + tiny decision ->
+  the fight (montage) -> the mirrored ending -> lesson card.
+- REPETITION: show the habit by repeating the SAME shot (same alarm, same bed, same
+  phone) with small changes and a jumping counter; at the end repeat it once more, reversed.
+- LOCATIONS: 3-4 core locations that return in different states (friends there -> gone ->
+  back). New locations compared with earlier videos where possible.
+- A TRANSFORMATION TOKEN shows the change without words (e.g. a headband he puts on).
+- For each scene list: shots with timings, captions, head pills, counter, sound effects,
+  and the music.
+- Build and check ONE clip at a time, then join all clips into one full video.
+- Deliver ONLY the final joined video, once, in high quality, unless I ask for clips.
+- Think like a film director: write each shot's angle AND its reason (wide = place,
+  close-up = emotion, insert = detail, POV = what he sees).
+- Pacing: shots usually hold 5-8 s with simple framing; cut when the story beat changes.
+  Soft dissolves are fine between time jumps.
+- Framing: mostly wide, full-body and medium (waist-up). Always show his whole head with
+  space above it. No shots of only legs, feet or hands (objects like an alarm clock are fine).
+  Close-ups only for big emotions, head + shoulders.
 
-## Imagery (visual metaphor) and rich backgrounds
-- Every video has 3-5 IMAGERY scenes where a feeling becomes a picture that can't exist in
-  real life (e.g. success = climbing stairs floating in the air and smashing a rock that blocks
-  the way; loneliness = snow falling inside his room). Put them especially at the low point
-  and the turning point; the other scenes keep the story real.
+## Imagery (visual metaphor)
+- One CENTRAL image carries the whole story and changes with it (the inner voice growing
+  and shrinking, a wall getting higher, stairs he climbs). Add 1-3 more imagery moments
+  at the low point and the turning point (e.g. climbing floating stairs and dashing through
+  the inner voice; punching its words on a punching bag).
 - Before each shot ask: would an image say this deeper than showing it literally?
-- Backgrounds must feel alive: layered depth (foreground / middle / far), real details and
-  props (plants, posters, shelves, textures), light shafts, dust or weather particles,
-  something softly moving. Never an almost-empty room with a floor line only.
 
 ## Visual style
-- 1920x1080, 30fps, thin black letterbox bars, soft film grain, subtle vignette,
-  slow subtle camera moves.
-- Near-black background, thin floor line, props as thin line-art with a few warm details.
-- Lighting rule: cold blue = isolation, stress, bad habits, phone glow.
-  Warm amber = hope, clarity, good choices. The film moves from cold to warm.
+- 1920x1080, 30fps, thin black letterbox bars, soft film grain, subtle vignette.
+- Backgrounds are FILLED with flat colour, never just black with line-art:
+  - three layers: far (sky, skyline with lit windows), middle (fence, wall, lockers,
+    shelves), near (floor with markings, bench, props);
+  - visible light sources (street lamp, desk lamp, window, phone, sunrise) with a pool of
+    light on the floor and soft shadows under the characters;
+  - warm mid-tone colours for normal life; dark scenes only for night / low point, and even
+    then one lit focus (spotlight, lamp, glow).
+- ONE accent colour per video means the habit/struggle (e.g. orange glow, red) and is
+  used everywhere it appears (the screen, the inner voice, the highlighted words).
+- Lighting: cold blue = isolation and bad habits; warm amber = hope and good choices.
 - Hero (my own design, reference image references/hero.png): cream (#F3EBCF), big round
   head, short rounded body, chunky rounded arms and legs, mitten hands, oval feet, dark thin
   outline, ONE teal (#5E9E95) wristband. Dot eyes and simple eyebrows; emotion from eyebrows,
@@ -144,8 +144,8 @@ never copy stories, characters or signature visuals from other channels.
     with "." or "?" (e.g. "STILL SCROLLING?", "WAKE UP.").
   - Below it: a big close-up of the hero with one strong, exaggerated emotion (wide eyes,
     sweat drop, eye bags, tears) - his face fills a big part of the frame.
-  - Near-black background, ONE strong light source (phone glow, lamp, window), and
+  - Dark background, ONE strong light source (phone glow, lamp, window), and
     ONE symbolic prop from the story (phone, book, alarm clock...).
   - Text and image must say the same idea; readable on a phone screen.
-- Learn from other channels' title/thumbnail PATTERNS only. Never copy their stories,
-  characters, fonts or signature visuals. Never use self-harm, drugs or graphic images.
+- Learn from other channels' PATTERNS only. Never copy their stories, characters, fonts or
+  signature visuals. Never use self-harm, drugs or graphic images.
