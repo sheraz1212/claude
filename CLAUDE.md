@@ -113,6 +113,8 @@ it around; vary the story type; never copy stories, characters or signature visu
 - Framing: mostly wide, full-body and medium (waist-up). Always show his whole head with
   space above it. No shots of only legs, feet or hands (objects like an alarm clock are fine).
   Close-ups only for big emotions, head + shoulders.
+- Characters ALWAYS have legs and feet (standing, walking or seated with legs hanging),
+  unless the legs are hidden behind furniture or out of frame.
 
 ## Imagery (visual metaphor)
 - One CENTRAL image carries the whole story and changes with it (the inner voice growing
