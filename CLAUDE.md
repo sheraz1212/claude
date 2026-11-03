@@ -8,7 +8,8 @@ These rules apply to every video made in this project.
   (light theme for normal life, sneaky/comic for the habit, dark piano/cello for pain, impact
   hits for shocks, orchestral swell for turning points, warm guitar/piano for hope).
   Only short silences of 1-3 s, and only on purpose (right before a big moment).
-- Mix it loud and full: overall mean volume around -16 dB (never quiet or "dead").
+- Mix it full but not too loud: overall mean volume around -18 dB (never quiet or "dead").
+  On-screen instruments (his guitar) sit under the scene, never louder than the score.
 - Match the music to the mood:
   - Energetic / motivated moments (training, running, starting work): fast retro
     8-bit chiptune or driving drums.
