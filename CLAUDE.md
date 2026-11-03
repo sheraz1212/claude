@@ -53,6 +53,10 @@ These rules apply to every video made in this project.
   the middle, then the first scene.
 - A black screen with one centred line may also be used mid-story as a chapter
   break, but only when it helps the story.
+- Every video ENDS on a black screen with one short lesson for the viewer (max ~6 words),
+  e.g. "Call while you can." It is the takeaway of the whole story, not a summary.
+- Vary the story TYPE from video to video (mystery, comedy mockumentary, reverse story,
+  fantasy, sci-fi, bottle story...). A counter is optional: use it only when it fits.
 
 ## Channel concept
 - Silent 2D animated short films for a US audience, 2-3+ minutes, landscape.
