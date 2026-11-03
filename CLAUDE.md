@@ -34,12 +34,13 @@ These rules apply to every video made in this project.
   - Short: 2-7 words, simple sentences ("He had friends." "Then he found it." "It felt good.").
   - Used in almost every shot.
   - Bottom centre, Patrick Hand font, warm cream, no background box.
-    One key word may be highlighted in the video's accent colour.
+    One or two key words in the video's accent colour (e.g. red); the rest warm cream.
 - **Wisdom lines:** at the turning point, 2-3 short, quotable lines
   ("Lazy isn't who you are. It's what you repeat."), on a dark screen or a spotlight.
 - **Head text = words said or thought by or to a character.**
   - His own thoughts, what he tells himself, or what another character says to him.
-  - A small rounded pill just above the speaker's head (beside it in close-ups).
+  - Small white text just above the speaker's head (beside it in close-ups), on a black
+    capsule at only ~10% opacity - just a soft shadow behind the words, never a solid pill.
   - Short: 2-5 words.
 - **Words as visuals:** the inner voice / temptation may appear as big words inside the
   scene that the hero can fight (punch them, walk through them, break them).
