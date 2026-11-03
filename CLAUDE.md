@@ -110,6 +110,16 @@ never copy stories, characters or signature visuals from other channels.
   (e.g. if one video had a metro, the next one must not). Give each story a surprise or
   twist, not just a straight sad-to-happy line.
 
+## Imagery (visual metaphor) and rich backgrounds
+- Every video has 3-5 IMAGERY scenes where a feeling becomes a picture that can't exist in
+  real life (e.g. success = climbing stairs floating in the air and smashing a rock that blocks
+  the way; loneliness = snow falling inside his room). Put them especially at the low point
+  and the turning point; the other scenes keep the story real.
+- Before each shot ask: would an image say this deeper than showing it literally?
+- Backgrounds must feel alive: layered depth (foreground / middle / far), real details and
+  props (plants, posters, shelves, textures), light shafts, dust or weather particles,
+  something softly moving. Never an almost-empty room with a floor line only.
+
 ## Visual style
 - 1920x1080, 30fps, thin black letterbox bars, soft film grain, subtle vignette,
   slow subtle camera moves.
