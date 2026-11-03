@@ -70,6 +70,11 @@ These rules apply to every video made in this project.
 ## Signature character: the inner voice
 - The channel's recurring antagonist is the hero's own inner voice, made visible (our own
   original design - never copy another channel's "shadow demon").
+- Its name and look: **THE BLOB** (code: `src/common/Blob.tsx`). A soft, heavy, purple-grey
+  goo with the hero's own round face, sleepy half-shut eyes and a lazy smile. Its eyes and
+  inner glow are the video's accent colour. Four stages: SMALL (sits beside him) ->
+  GROWING (leans in and whispers) -> HEAVY (drapes over his shoulders, he sinks) ->
+  WEAKER (he stands tall, it melts into a puddle).
 - It appears in every video, says the same short lines again and again ("one more.",
   "tomorrow.", "you deserve it."), grows stronger while the habit wins, gets weaker
   ("Weaker.") as he fights back, and is finally broken or left behind.
