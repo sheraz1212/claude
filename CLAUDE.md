@@ -28,6 +28,9 @@ These rules apply to every video made in this project.
   vibraphone, timpani, taiko, flute, clarinet, oboe, bassoon, trumpet, horn, tuba,
   synth pad, synth lead, 8-bit chip, choir, drum kit, claps, bells. Guitar only where the
   scene really needs it (someone plays one, a campfire) - never the default.
+- The score must never contradict the story: no guitar or guitar-like plucks (pizzicato,
+  harp) while the story says he stopped playing. When the inner voice wins (he stays home,
+  gives up), use DARK KEYS: low piano ostinato, dark organ/pad, low pulse.
 - Every outline states the music for each scene, e.g. `MUSIC: sad-piano`.
 
 ## Text on screen
