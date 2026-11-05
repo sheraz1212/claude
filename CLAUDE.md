@@ -23,6 +23,11 @@ These rules apply to every video made in this project.
   and sound effects in `public/sfx/`, with clear mood names (for example
   `energy-8bit.wav`, `sad-piano.wav`), so any file can be replaced later.
 - Never copy melodies from real games, films or songs. Write only original music.
+- Use a WIDE palette of instruments and change them per scene: piano, celesta, music box,
+  organ, cello, violin, contrabass, pizzicato, harp, marimba, xylophone, glockenspiel,
+  vibraphone, timpani, taiko, flute, clarinet, oboe, bassoon, trumpet, horn, tuba,
+  synth pad, synth lead, 8-bit chip, choir, drum kit, claps, bells. Guitar only where the
+  scene really needs it (someone plays one, a campfire) - never the default.
 - Every outline states the music for each scene, e.g. `MUSIC: sad-piano`.
 
 ## Text on screen
