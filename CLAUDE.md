@@ -139,8 +139,12 @@ it around; vary the story type; never copy stories, characters or signature visu
     shelves), near (floor with markings, bench, props);
   - visible light sources (street lamp, desk lamp, window, phone, sunrise) with a pool of
     light on the floor and soft shadows under the characters;
-  - dim, muted, slightly dark tones even for normal life (never bright or saturated);
-    night / low point darker still, always with one lit focus (spotlight, lamp, glow).
+  - ONE dark visual theme for the whole video, every scene: dusk/night palette (deep
+    purple-brown skies, dark walls, muted floors). Even happy or daytime scenes stay dim -
+    never a fully bright scene, never pastel or sunny-bright backgrounds.
+  - Brightness comes ONLY from light sources and their pools (street lamp, lit windows,
+    lamp, spotlight, phone, sunrise glow); everything else stays dark and muted.
+  - Never flat black or dull either: filled shapes, lit windows, warm light pools.
 - ONE accent colour per video means the habit/struggle (e.g. orange glow, red) and is
   used everywhere it appears (the screen, the inner voice, the highlighted words).
 - Lighting: cold blue = isolation and bad habits; warm amber = hope and good choices.
