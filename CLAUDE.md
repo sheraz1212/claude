@@ -113,8 +113,8 @@ it around; vary the story type; never copy stories, characters or signature visu
 - Build and check ONE clip at a time, then join all clips into one full video.
 - Deliver ONLY the final joined video, once, in high quality, unless I ask for clips.
 - Deliver 3 files: (1) video + SFX + whisper without music, (2) music only, same length,
-  (3) full mix. All iPhone-friendly (H.264 High, level 4.1, yuv420p, AAC). In the mix, SFX
-  and the whisper sit clearly above the music.
+  (3) full mix. In the mix, SFX and the whisper sit clearly above the music.
+- Save limits: no extra test files, previews or duplicate versions unless I ask.
 - Think like a film director: write each shot's angle AND its reason (wide = place,
   close-up = emotion, insert = detail, POV = what he sees).
 - Pacing: shots usually hold 5-8 s with simple framing; cut when the story beat changes.
