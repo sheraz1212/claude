@@ -131,6 +131,16 @@ it around; vary the story type; never copy stories, characters or signature visu
   at the low point and the turning point (e.g. climbing floating stairs and dashing through
   the inner voice; punching its words on a punching bag).
 - Before each shot ask: would an image say this deeper than showing it literally?
+- Patterns learned from the 3 reference videos (use the patterns, never their stories):
+  - A hurtful word HITS: it sticks on him as red handwriting, with a deep dark impact SFX,
+    and he sinks. Later the demon repeats it in his head; the whisper speeds up and layers
+    until the word fills the room (the low point).
+  - A small reveal twist: the person who hurt him has forgotten / talks casually - the
+    hero sees he repeated it to himself a thousand times (twist counter: THEY 1 / HE 515).
+  - A symbolic object he throws away or breaks at the turning point (the thing he used
+    against himself).
+  - A mirror can show the demon while he is weak and his own smile at the end.
+  - The same dark visual theme in every scene; red only for the demon and its words.
 
 ## Visual style
 - 1920x1080, 30fps, thin black letterbox bars, soft film grain, subtle vignette.
