@@ -73,17 +73,17 @@ These rules apply to every video made in this project.
 - Vary the story TYPE from video to video (mystery, comedy mockumentary, reverse story,
   fantasy, sci-fi, bottle story...).
 
-## Signature character: the inner voice
-- The channel's recurring antagonist is the hero's own inner voice, made visible (our own
-  original design - never copy another channel's "shadow demon").
-- Its name and look: **THE BLOB** (code: `src/common/Blob.tsx`). A soft, heavy, purple-grey
-  goo with the hero's own round face, sleepy half-shut eyes and a lazy smile. Its eyes and
-  inner glow are the video's accent colour. Four stages: SMALL (sits beside him) ->
-  GROWING (leans in and whispers) -> HEAVY (drapes over his shoulders, he sinks) ->
-  WEAKER (he stands tall, it melts into a puddle).
-- It appears in every video, says the same short lines again and again ("one more.",
-  "tomorrow.", "you deserve it."), grows stronger while the habit wins, gets weaker
-  ("Weaker.") as he fights back, and is finally broken or left behind.
+## Signature character: the inner voice (THE DEMON)
+- The channel's recurring antagonist is the hero's own inner soul, made visible
+  (code: `src/common/Demon.tsx`). It is ALWAYS red + black, in every video.
+- Look: exactly the hero's shape (round head, body, legs, mitten hands, oval feet), about
+  1.35x his size, charcoal-black body, soft red glow around it, red eyes / brows / mouth,
+  a RED wristband (mirror of his teal one), red embers rising from its feet.
+- Its words: red, brush handwriting font (Caveat Brush), beside its head, NO capsule -
+  clearly different from captions and head pills. Paired with the low echoing whisper.
+- It says the same short lines again and again ("one more.", "tomorrow.", "you deserve it."),
+  grows bigger while the habit wins (SMALL -> GROWING, leans in -> HEAVY, towers over him),
+  gets weaker as he fights back ("weaker..."): it shrinks, red cracks appear, and it breaks.
 
 ## How to give story ideas
 When I ask for ideas, give 10 ORIGINAL ideas, each in this exact format:
@@ -112,6 +112,9 @@ it around; vary the story type; never copy stories, characters or signature visu
   and the music.
 - Build and check ONE clip at a time, then join all clips into one full video.
 - Deliver ONLY the final joined video, once, in high quality, unless I ask for clips.
+- Deliver 3 files: (1) video + SFX + whisper without music, (2) music only, same length,
+  (3) full mix. All iPhone-friendly (H.264 High, level 4.1, yuv420p, AAC). In the mix, SFX
+  and the whisper sit clearly above the music.
 - Think like a film director: write each shot's angle AND its reason (wide = place,
   close-up = emotion, insert = detail, POV = what he sees).
 - Pacing: shots usually hold 5-8 s with simple framing; cut when the story beat changes.
@@ -136,15 +139,17 @@ it around; vary the story type; never copy stories, characters or signature visu
     shelves), near (floor with markings, bench, props);
   - visible light sources (street lamp, desk lamp, window, phone, sunrise) with a pool of
     light on the floor and soft shadows under the characters;
-  - warm mid-tone colours for normal life; dark scenes only for night / low point, and even
-    then one lit focus (spotlight, lamp, glow).
+  - dim, muted, slightly dark tones even for normal life (never bright or saturated);
+    night / low point darker still, always with one lit focus (spotlight, lamp, glow).
 - ONE accent colour per video means the habit/struggle (e.g. orange glow, red) and is
   used everywhere it appears (the screen, the inner voice, the highlighted words).
 - Lighting: cold blue = isolation and bad habits; warm amber = hope and good choices.
-- Hero (my own design, reference image references/hero.png): cream (#F3EBCF), big round
-  head, short rounded body, chunky rounded arms and legs, mitten hands, oval feet, dark thin
+- Hero (my own design, reference image references/hero.png): cream (#F3EBCF), round
+  head, a young man's build (taller body, long chunky legs - never a small child), chunky arms, mitten hands, oval feet, dark thin
   outline, ONE teal (#5E9E95) wristband. Dot eyes and simple eyebrows; emotion from eyebrows,
   eyelids, posture and movement speed. Keep him identical in every video.
+- The hero may get ONE scene prop now and then when it truly fits the moment (e.g. a cap
+  on stage at the open mic, a scarf on a winter night) - never in every video or every scene.
 - Supporting characters: same body shape in grey or tan, each with ONE simple accessory
   (e.g. an orange scarf). Never beanies.
 - Counter (HUD): top-left, small clean font, changes at key story moments.
