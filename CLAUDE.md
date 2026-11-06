@@ -86,7 +86,7 @@ These rules apply to every video made in this project.
   (code: `src/common/Demon.tsx`). It is ALWAYS red + black, in every video.
 - Look: exactly the hero's shape (round head, body, legs, mitten hands, oval feet), about
   1.35x his size, charcoal-black body, soft red glow around it, red eyes / brows / mouth,
-  a RED wristband (mirror of his teal one), red embers rising from its feet.
+  red embers rising from its feet.
 - Its words: red, brush handwriting font (Caveat Brush), beside its head, NO capsule -
   clearly different from captions and head pills. Paired with the low echoing whisper.
 - It says the same short lines again and again ("one more.", "tomorrow.", "you deserve it."),
@@ -168,12 +168,13 @@ it around; vary the story type; never copy stories, characters or signature visu
 - Lighting: cold blue = isolation and bad habits; warm amber = hope and good choices.
 - Hero (my own design, reference image references/hero.png): cream (#F3EBCF), round
   head, a young man's build (taller body, long chunky legs - never a small child), chunky arms, mitten hands, oval feet, dark thin
-  outline, ONE teal (#5E9E95) wristband. Dot eyes and simple eyebrows; emotion from eyebrows,
+  outline NO wristband (props are decided per video). Dot eyes and simple eyebrows; emotion from eyebrows,
   eyelids, posture and movement speed. Keep him identical in every video.
 - The hero may get ONE scene prop now and then when it truly fits the moment (e.g. a cap
   on stage at the open mic, a scarf on a winter night) - never in every video or every scene.
-- Supporting characters: same body shape in grey or tan, each with ONE simple accessory
-  (e.g. an orange scarf). Never beanies.
+- Supporting characters: the SAME tall young build as the hero (never small or chibi), grey
+  or tan, each with ONE simple accessory - often a cap, or glasses, headband, scarf.
+  Never beanies. Only a real small child in the story is drawn small.
 - Counter (HUD): top-left, small clean font, changes at key story moments.
 
 ## YouTube titles and thumbnails
