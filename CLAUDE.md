@@ -40,6 +40,8 @@ These rules apply to every video made in this project.
   - Scene drops: everything fades out, 2-3 s of no instrument, then piano alone again, the
     pad joins after 2-4 s. Keep layering different instruments to build the melody.
   - Music rises and falls exactly with the scene: it lands on cuts and beats.
+  - Mix the pad like a film mixer: full when it plays alone, a bit lower once the piano
+    comes in, and further back when several instruments carry the melody (auto-ducking).
 - Sound effects can still be generated with Python.
 - Save music in `public/music/`
   and sound effects in `public/sfx/`, with clear mood names (for example
