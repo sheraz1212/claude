@@ -23,6 +23,9 @@ These rules apply to every video made in this project.
   and sound effects in `public/sfx/`, with clear mood names (for example
   `energy-8bit.wav`, `sad-piano.wav`), so any file can be replaced later.
 - Never copy melodies from real games, films or songs. Write only original music.
+- Favourite core of the score: piano, violin, cello and full orchestra (strings, brass,
+  timpani) - they suit our films better than flute or guitar. Still pick instruments per
+  video and per scene, including ones not listed here.
 - Use a WIDE palette of instruments and change them per scene: piano, celesta, music box,
   organ, cello, violin, contrabass, pizzicato, harp, marimba, xylophone, glockenspiel,
   vibraphone, timpani, taiko, flute, clarinet, oboe, bassoon, trumpet, horn, tuba,
@@ -61,6 +64,8 @@ These rules apply to every video made in this project.
 
 - Every story opens with a hook: a black screen with one short line centred in the
   middle, with ONE key word highlighted in the accent colour, then the first scene.
+- Every black-screen line (hook, chapter break, wisdom lines, lesson) appears with a soft
+  handwriting / pen-on-paper sound effect while the text writes on.
 - A black screen with one centred line may be used mid-story as a chapter break.
 - The last scene mirrors the first scene (same place, same shot) but changed.
 - Every video ENDS on a black screen with one short lesson for the viewer (max ~6 words),
