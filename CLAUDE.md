@@ -19,7 +19,14 @@ These rules apply to every video made in this project.
 - Sound effects play only when something happens on screen (a tray rattles, a door slams,
   a cup is crushed). Build a varied sound library for each story.
 - Special effects (e.g. a dark whisper) are spices: only 1-2 key moments per video.
-- Generate all music and sound effects with Python. Save music in `public/music/`
+- MUSIC IS WRITTEN AS MIDI AND PLAYED WITH REAL RECORDED INSTRUMENTS: compose the notes in
+  Python (`audio/midi_score.py`, library `mido`), render with FluidSynth + the FluidR3 GM
+  soundfont (`apt-get install fluidsynth fluid-soundfont-gm`). Never synthesize the score
+  from raw waves any more - it sounds fake.
+- Signature sound: a group of cellos + contrabass underneath, a piano melody on top, and a
+  violin section (group of violins) that joins or takes the melody at the emotional peaks.
+- Sound effects can still be generated with Python.
+- Save music in `public/music/`
   and sound effects in `public/sfx/`, with clear mood names (for example
   `energy-8bit.wav`, `sad-piano.wav`), so any file can be replaced later.
 - Never copy melodies from real games, films or songs. Write only original music.
