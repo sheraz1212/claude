@@ -43,7 +43,9 @@ These rules apply to every video made in this project.
   - Music rises and falls exactly with the scene: it lands on cuts and beats.
   - Mix the pad like a film mixer: full when it plays alone, a bit lower once the piano
     comes in, and further back when several instruments carry the melody (auto-ducking).
-- Sound effects can still be generated with Python.
+- Sound effects: keep using the generated SFX library (it works well) AND use instruments as
+  sound effects where a scene needs it (a single piano hit, a timpani boom, a brass stab,
+  a celesta sparkle, a cymbal). Both are options - pick per scene.
 - Save music in `public/music/`
   and sound effects in `public/sfx/`, with clear mood names (for example
   `energy-8bit.wav`, `sad-piano.wav`), so any file can be replaced later.
@@ -145,8 +147,9 @@ it around; vary the story type; never copy stories, characters or signature visu
   and the music.
 - Build and check ONE clip at a time, then join all clips into one full video.
 - Deliver ONLY the final joined video, once, in high quality, unless I ask for clips.
-- Deliver 3 files: (1) video + SFX + whisper without music, (2) music only, same length,
-  (3) full mix. In the mix, SFX and the whisper sit clearly above the music.
+- Deliver 2 files only: (1) the video with all sound effects (generated SFX + instrument
+  SFX) and the whisper, no background music; (2) the background music alone, same length.
+  NO full-mix file - I mix them myself in CapCut (saves resources).
 - Save limits: no extra test files, previews or duplicate versions unless I ask.
 - Think like a film director: write each shot's angle AND its reason (wide = place,
   close-up = emotion, insert = detail, POV = what he sees).
