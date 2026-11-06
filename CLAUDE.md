@@ -24,7 +24,8 @@ These rules apply to every video made in this project.
   soundfont (`apt-get install fluidsynth fluid-soundfont-gm`). Never synthesize the score
   from raw waves any more - it sounds fake.
 - SIGNATURE SOUND = AMBIENT PIANO SCORE:
-  - On top: piano keys in the MIDDLE register (not dark-low, not thin-high), slow and sparse.
+  - On top: piano keys, slow and sparse. The pitch/register is chosen PER SCENE (lower and
+    heavier for pain, middle for normal life, higher and lighter for hope) - never one fixed pitch.
   - Underneath: a soft "hmmm" pad, layered and changed per scene, chosen from: warm pad,
     halo pad, bowed glass, slow strings, soft organ, French horn (never choir voices).
     Cellos / contrabass / a violin group join at the emotional peaks.
