@@ -29,7 +29,10 @@ These rules apply to every video made in this project.
   - Underneath: a soft "hmmm" pad, layered and changed per scene, chosen from: warm pad,
     halo pad, bowed glass, slow strings, soft organ, French horn (never choir voices).
     Cellos / contrabass / a violin group join at the emotional peaks.
-  - The pad is NOT on the whole video - only where the scene asks for it.
+  - The pad is NOT on the whole video - only in SOME scenes, where the scene asks for it.
+  - Fast scenes (a race, running, rushing) get a fast beat: bright piano runs, quick
+    pizzicato / staccato strings, snare and drums driving the tempo (like the race in
+    "The Kid Who Fell" first version) - no pad there.
   - The pad is for sad / dark / thinking moments ONLY. Happy, brave and hopeful moments
     (he helps someone, they run together, he wins) get bright, moving music in a major key:
     piano + string ensemble + horns + celesta - never the sad "hmmm".
