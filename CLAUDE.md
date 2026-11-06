@@ -29,6 +29,9 @@ These rules apply to every video made in this project.
     halo pad, bowed glass, slow strings, soft organ, French horn (never choir voices).
     Cellos / contrabass / a violin group join at the emotional peaks.
   - The pad is NOT on the whole video - only where the scene asks for it.
+  - The pad is for sad / dark / thinking moments ONLY. Happy, brave and hopeful moments
+    (he helps someone, they run together, he wins) get bright, moving music in a major key:
+    piano + string ensemble + horns + celesta - never the sad "hmmm".
   - Hook: ONE single piano note ("tuuun") on the black screen, then the pad fades in, then
     the piano keys come in slowly.
   - Demon appears (rises from below): a short low-brass swell that rises and cuts off -
