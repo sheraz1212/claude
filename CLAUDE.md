@@ -23,8 +23,19 @@ These rules apply to every video made in this project.
   Python (`audio/midi_score.py`, library `mido`), render with FluidSynth + the FluidR3 GM
   soundfont (`apt-get install fluidsynth fluid-soundfont-gm`). Never synthesize the score
   from raw waves any more - it sounds fake.
-- Signature sound: a group of cellos + contrabass underneath, a piano melody on top, and a
-  violin section (group of violins) that joins or takes the melody at the emotional peaks.
+- SIGNATURE SOUND = AMBIENT PIANO SCORE:
+  - On top: piano keys in the MIDDLE register (not dark-low, not thin-high), slow and sparse.
+  - Underneath: a soft "hmmm" pad, layered and changed per scene, chosen from: warm pad,
+    halo pad, bowed glass, slow strings, soft organ, French horn (never choir voices).
+    Cellos / contrabass / a violin group join at the emotional peaks.
+  - The pad is NOT on the whole video - only where the scene asks for it.
+  - Hook: ONE single piano note ("tuuun") on the black screen, then the pad fades in, then
+    the piano keys come in slowly.
+  - Demon appears: a short brass-group swell (sax-like) that rises and cuts off, then a soft
+    clap / plate hit; then piano + pad continue.
+  - Scene drops: everything fades out, 2-3 s of no instrument, then piano alone again, the
+    pad joins after 2-4 s. Keep layering different instruments to build the melody.
+  - Music rises and falls exactly with the scene: it lands on cuts and beats.
 - Sound effects can still be generated with Python.
 - Save music in `public/music/`
   and sound effects in `public/sfx/`, with clear mood names (for example
