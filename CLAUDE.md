@@ -31,8 +31,9 @@ These rules apply to every video made in this project.
   - The pad is NOT on the whole video - only where the scene asks for it.
   - Hook: ONE single piano note ("tuuun") on the black screen, then the pad fades in, then
     the piano keys come in slowly.
-  - Demon appears (rises from below): a low TROMBONE group swell that rises and cuts off,
-    then a soft clap / plate hit; then piano + pad continue.
+  - Demon appears (rises from below): a short low-brass swell that rises and cuts off -
+    e.g. trombones, tuba, low horns (vary it per video) - then a soft clap / plate hit.
+  - These are examples and a palette, not fixed rules: vary instruments and moments.
   - Scene drops: everything fades out, 2-3 s of no instrument, then piano alone again, the
     pad joins after 2-4 s. Keep layering different instruments to build the melody.
   - Music rises and falls exactly with the scene: it lands on cuts and beats.
