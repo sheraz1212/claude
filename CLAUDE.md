@@ -28,6 +28,10 @@ These rules apply to every video made in this project.
     inside that chord ("tun tun tun tun..."), then the next chord - like cinematic piano.
   - Change it per scene: tempo, register (low/heavy for pain, middle for normal life,
     high/light for hope), dark or bright chords. No fixed key or start note.
+  - Ideas, not rules (use judgement per scene): a piano melody on top, between the chords,
+    dark or light, fast or slow with the scene. Intense moment: one big "diiimmm" together
+    with a sound effect, and the "tun tun" can stop. The speed of the "tun tun" follows the
+    scene's energy (slow when quiet, faster when tense or moving).
   - Other instruments (cellos, violins, horns, celesta...) add melodies only where the
     scene needs them, on top of the piano.
   - The soft "hmmm" pad is NOT the main sound. Use it ONLY when a scene stops, drops or
