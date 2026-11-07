@@ -29,10 +29,12 @@ These rules apply to every video made in this project.
   - Underneath: a soft "hmmm" pad, layered and changed per scene, chosen from: warm pad,
     halo pad, bowed glass, slow strings, soft organ, French horn (never choir voices).
     Cellos / contrabass / a violin group join at the emotional peaks.
-  - What the "hmmm" really is: sustained CHORDS (piano-type chords, e.g. around D#5) held for
+  - What the "hmmm" really is: sustained CHORDS (piano-type chords) held for
     a few seconds each; the next chord fades in WHILE the last one is still dying away, so
     they overlap and blend - never hard on/off, never choppy. Kept very, very quiet under
     the piano melody (fade-in attack, long release, 1-2 s overlap between chords).
+  - Chords and melody are chosen naturally per scene: dark, normal or bright chords; a
+    dark, normal or high-pitched melody - whatever that moment needs. No fixed key or start note.
   - Silence is never dead: where no music plays, a very soft ROOM TONE / ambience ("air",
     a faint "ssshhh" like room hiss or soft wind) stays underneath.
   - The pad is NOT on the whole video - only in SOME scenes, where the scene asks for it.
