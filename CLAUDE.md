@@ -23,21 +23,17 @@ These rules apply to every video made in this project.
   Python (`audio/midi_score.py`, library `mido`), render with FluidSynth + the FluidR3 GM
   soundfont (`apt-get install fluidsynth fluid-soundfont-gm`). Never synthesize the score
   from raw waves any more - it sounds fake.
-- SIGNATURE SOUND = AMBIENT PIANO SCORE:
-  - On top: piano keys, slow and sparse. The pitch/register is chosen PER SCENE (lower and
-    heavier for pain, middle for normal life, higher and lighter for hope) - never one fixed pitch.
-  - Underneath: a soft "hmmm" pad, layered and changed per scene, chosen from: warm pad,
-    halo pad, bowed glass, slow strings, soft organ, French horn (never choir voices).
-    Cellos / contrabass / a violin group join at the emotional peaks.
-  - What the "hmmm" really is: sustained CHORDS (piano-type chords) held for
-    a few seconds each; the next chord fades in WHILE the last one is still dying away, so
-    they overlap and blend - never hard on/off, never choppy. Kept very, very quiet under
-    the piano melody (fade-in attack, long release, 1-2 s overlap between chords).
-  - Chords and melody are chosen naturally per scene: dark, normal or bright chords; a
-    dark, normal or high-pitched melody - whatever that moment needs. No fixed key or start note.
-  - Silence is never dead: where no music plays, a very soft ROOM TONE / ambience ("air",
-    a faint "ssshhh" like room hiss or soft wind) stays underneath.
-  - The pad is NOT on the whole video - only in SOME scenes, where the scene asks for it.
+- SIGNATURE SOUND = CINEMATIC / AMBIENT PIANO:
+  - The main bed is the piano itself: a deep low chord ("diiimmm"), then repeating notes
+    inside that chord ("tun tun tun tun..."), then the next chord - like cinematic piano.
+  - Change it per scene: tempo, register (low/heavy for pain, middle for normal life,
+    high/light for hope), dark or bright chords. No fixed key or start note.
+  - Other instruments (cellos, violins, horns, celesta...) add melodies only where the
+    scene needs them, on top of the piano.
+  - The soft "hmmm" pad is NOT the main sound. Use it ONLY when a scene stops, drops or
+    turns quietly emotional - never from the start, never through the whole video. When used:
+    overlapping sustained chords, very quiet, ducking under any melody.
+  - Silence is never dead: a very soft room tone / ambience can sit underneath.
   - Fast scenes (a race, running, rushing) get a fast beat: bright piano runs, quick
     pizzicato / staccato strings, snare and drums driving the tempo (like the race in
     "The Kid Who Fell" first version) - no pad there.
