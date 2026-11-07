@@ -28,6 +28,10 @@ These rules apply to every video made in this project.
     inside that chord ("tun tun tun tun..."), then the next chord - like cinematic piano.
   - Change it per scene: tempo, register (low/heavy for pain, middle for normal life,
     high/light for hope), dark or bright chords. No fixed key or start note.
+  - CONTINUITY FIRST: the score is ONE flowing piece, not pieces glued together. The same
+    "tun tun" pulse keeps running through the video; changes happen only at the big story
+    turns (3-4 sections per video) and always GRADUALLY (volume, register and harmony drift
+    over many seconds). Never switch speed, register or instruments every few seconds.
   - Ideas, not rules (use judgement per scene): a piano melody on top, between the chords,
     dark or light, fast or slow with the scene. Intense moment: one big "diiimmm" together
     with a sound effect, and the "tun tun" can stop. The speed of the "tun tun" follows the
