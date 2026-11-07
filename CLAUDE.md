@@ -161,6 +161,8 @@ it around; vary the story type; never copy stories, characters or signature visu
 - Deliver 2 files only: (1) the video with all sound effects (generated SFX + instrument
   SFX) and the whisper, no background music; (2) the background music alone, same length.
   NO full-mix file - I mix them myself in CapCut (saves resources).
+  Any sound made WITH AN INSTRUMENT AS AN EFFECT (demon brass swell, clap, cymbal, piano hit,
+  timpani boom, celesta sparkle) belongs in file (1) with the video - never in the music file.
 - Save limits: no extra test files, previews or duplicate versions unless I ask.
 - Think like a film director: write each shot's angle AND its reason (wide = place,
   close-up = emotion, insert = detail, POV = what he sees).
