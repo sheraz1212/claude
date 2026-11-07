@@ -48,8 +48,8 @@ These rules apply to every video made in this project.
   - The pad is for sad / dark / thinking moments ONLY. Happy, brave and hopeful moments
     (he helps someone, they run together, he wins) get bright, moving music in a major key:
     piano + string ensemble + horns + celesta - never the sad "hmmm".
-  - Hook: ONE single piano note ("tuuun") on the black screen, then the pad fades in, then
-    the piano keys come in slowly.
+  - Hook: the black screen may start in silence (only the pen-writing SFX) or with a very
+    soft, warm low note - never a sharp/loud single note. The music comes in with the first scene.
   - Demon appears (rises from below): a short low-brass swell that rises and cuts off -
     e.g. trombones, tuba, low horns (vary it per video) - then a soft clap / plate hit.
   - These are examples and a palette, not fixed rules: vary instruments and moments.
