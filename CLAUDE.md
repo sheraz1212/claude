@@ -23,6 +23,14 @@ These rules apply to every video made in this project.
   Python (`audio/midi_score.py`, library `mido`), render with FluidSynth + the FluidR3 GM
   soundfont (`apt-get install fluidsynth fluid-soundfont-gm`). Never synthesize the score
   from raw waves any more - it sounds fake.
+- HOW WE BUILD THE SCORE NOW (tested on "The Window Across"):
+  - Each story section = ONE smooth, legato melody + soft sustained chords underneath at
+    about 20% of the melody's volume.
+  - Sad / painful sections: the melody on VIOLIN (it carries sadness better than piano);
+    normal and hopeful sections: piano.
+  - When the scene's mood changes, the current section FADES OUT completely first, then
+    the next section fades in with its own melody - never two pieces bumped together.
+  - Usually 4-6 sections per video, following the story's big turns.
 - SIGNATURE SOUND = CINEMATIC / AMBIENT PIANO:
   - The main bed is the piano itself: a deep low chord ("diiimmm"), then repeating notes
     inside that chord ("tun tun tun tun..."), then the next chord - like cinematic piano.
