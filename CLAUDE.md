@@ -121,6 +121,35 @@ These rules apply to every video made in this project.
 - Every video ENDS on a black screen with one short lesson for the viewer (max ~6 words),
   e.g. "Call while you can." It is the takeaway of the whole story.
 
+## CLARITY FIRST (the biggest rule)
+- SILENT TEST: someone who never saw the script must understand, from the video alone,
+  WHAT the topic is (within the first 15-20 s), WHAT happens in each scene and WHY he feels
+  what he feels. If a shot only makes sense when you know the script, redo it.
+- Build a clear, LITERAL everyday story first (marks at school, a phone, a gym, a job);
+  metaphors (demon, glowing windows, words as objects) only sit ON TOP of that story,
+  never replace it.
+- ONE obvious symbol anyone reads instantly (a number above every head, a battery, a
+  meter, a follower count) - shown in the world, not explained.
+- Cause -> effect on screen: every feeling has a visible reason in the same or the
+  previous shot (he sees the other's 91 -> he looks at his 62 -> he drops his head).
+- Real people with clear roles drive the story: a parent, a friend, a rival, a teacher.
+  The twist comes THROUGH another person (the one he envies is hurting too / is missing
+  what he has).
+- A small object that comes back 3 times and changes meaning (a note in a lunchbox, a
+  cup, a drawing): ignored -> missed -> treasured.
+- Captions say plainly what the image cannot (who, when, what changed) - simple, not poetic.
+
+## VARIETY (videos must never feel dull)
+- A full, living world: most scenes have other people (3-8 classmates, passers-by,
+  colleagues), each doing something small (talking, eating, walking past).
+- 6-8 places per video: 3-4 core places that return + 3-4 one-off places that move the
+  story (car with mom, canteen, bus stop, school gate, rain outside, his room).
+- Shot variety in EVERY clip: wide (place, crowd), medium, close-up (big emotion),
+  top-down insert (lunchbox, desk, test papers side by side), insert of an object held in
+  his hand (test paper, phone, note), POV phone screen, reflection (mirror, puddle,
+  window). Never two shots in a row with the same framing.
+- A time counter can show passing time (WEEK 1 -> 11 bottom-right) next to the symbol.
+
 ## Channel concept
 - Silent 2D animated short films for a US audience, 2:40-3:30 long, landscape.
 - Topics: modern everyday struggles young adults relate to: phone/gaming/social media habits,
@@ -152,8 +181,9 @@ One sentence: the struggle shown as ONE central image that changes through the s
 - Accent colour: the one colour that means the habit/struggle in this video.
 - Music: how the score changes from scene to scene.
 - End: the final lesson, max 6 words.
-Rules for ideas: understandable without words; one main character; 3-4 core locations
-that come back again and again; a clear low point and one tiny honest decision that turns
+Rules for ideas: understandable without words; one main character plus real supporting
+people (parent, friend, rival); 3-4 core locations that come back again and again plus
+3-4 one-off places; passes the SILENT TEST (topic clear without any script); a clear low point and one tiny honest decision that turns
 it around; vary the story type; never copy stories, characters or signature visuals.
 
 ## How to write a story outline (after I pick an idea)
@@ -164,7 +194,8 @@ it around; vary the story type; never copy stories, characters or signature visu
 - REPETITION: show the habit by repeating the SAME shot (same alarm, same bed, same
   phone) with small changes and a jumping counter; at the end repeat it once more, reversed.
 - LOCATIONS: 3-4 core locations that return in different states (friends there -> gone ->
-  back). New locations compared with earlier videos where possible.
+  back) + 3-4 one-off places (6-8 in total). New locations compared with earlier videos.
+- Before building, check the outline against CLARITY FIRST and VARIETY.
 - A TRANSFORMATION TOKEN shows the change without words (e.g. a headband he puts on).
 - For each scene list: shots with timings, captions, head pills, counter, sound effects,
   and the music.
@@ -181,7 +212,8 @@ it around; vary the story type; never copy stories, characters or signature visu
 - Pacing: shots usually hold 5-8 s with simple framing; cut when the story beat changes.
   Soft dissolves are fine between time jumps.
 - Framing: mostly wide, full-body and medium (waist-up). Always show his whole head with
-  space above it. No shots of only legs, feet or hands (objects like an alarm clock are fine).
+  space above it. No shots of only legs or feet. Inserts of an object held in his hand
+  (test paper, phone, note) and top-down object inserts are fine and wanted for variety.
   Close-ups only for big emotions, head + shoulders.
 - Characters ALWAYS have legs and feet (standing, walking or seated with legs hanging),
   unless the legs are hidden behind furniture or out of frame.
