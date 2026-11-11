@@ -169,6 +169,7 @@ These rules apply to every video made in this project.
 - Its words: red, brush handwriting font (Caveat Brush), beside its head, NO capsule -
   clearly different from captions and head pills. Paired with the low echoing whisper.
 - It says the same short lines again and again ("one more.", "tomorrow.", "you deserve it."),
+  and sometimes a few other short lines that fit the story - not only the same 2-3 every time;
   grows bigger while the habit wins (SMALL -> GROWING, leans in -> HEAVY, towers over him),
   gets weaker as he fights back ("weaker..."): it shrinks, red cracks appear, and it breaks.
 
@@ -263,6 +264,11 @@ it around; vary the story type; never copy stories, characters or signature visu
 - Supporting characters: the SAME tall young build as the hero (never small or chibi), grey
   or tan, each with ONE simple accessory - often a cap, or glasses, headband, scarf.
   Never beanies. Only a real small child in the story is drawn small.
+- Women and girls (mom, sister, friend) get LONG HAIR with a ponytail behind (accessory
+  'longhair') so they read as female at once. People at work wear a clear WORK UNIFORM
+  (e.g. waitress dress + apron + name tag), so the workplace and their job read instantly.
+- The first time a supporting character appears, the caption names who they are
+  ("His mom worked till midnight."), and captions spell out their sacrifice plainly.
 - Counter (HUD): only when the story truly needs one (never forced); top-left, small clean
   font, changes at key story moments.
 
