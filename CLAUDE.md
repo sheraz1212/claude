@@ -221,7 +221,9 @@ it around; vary the story type; never copy stories, characters or signature visu
 - Lighting: cold blue = isolation and bad habits; warm amber = hope and good choices.
 - Hero (my own design, reference image references/hero.png): cream (#F3EBCF), round
   head, a young man's build (taller body, long chunky legs - never a small child), chunky arms, mitten hands, oval feet, dark thin
-  outline NO wristband (props are decided per video). Dot eyes and simple eyebrows; emotion from eyebrows,
+  outline NO wristband (props are decided per video). He is ONE smooth shape (like references/hero.png):
+  one outline around the whole silhouette, arms grow out of the shoulders, legs flow out of the body,
+  no seam lines at shoulders, wrists, hips or neck - never pieces joined like a robot. Dot eyes and simple eyebrows; emotion from eyebrows,
   eyelids, posture and movement speed. Keep him identical in every video.
 - The hero may get ONE scene prop now and then when it truly fits the moment (e.g. a cap
   on stage at the open mic, a scarf on a winter night) - never in every video or every scene.
