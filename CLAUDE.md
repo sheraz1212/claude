@@ -177,7 +177,8 @@ When I ask for ideas, give 10 ORIGINAL ideas, each in this exact format:
 **N. Title** (2-3 words)
 One sentence: the struggle shown as ONE central image that changes through the story.
 - Hook: the black-screen opening line, max 6 words, one highlighted word.
-- Counter: optional (DAY 1 -> 340, NIGHT 1 -> 30...), only if it fits.
+- Counter: optional (DAY 1 -> 340, NIGHT 1 -> 30...), only if it fits. NEVER force a
+  counter into a story where it doesn't belong - then write "Counter: none".
 - Accent colour: the one colour that means the habit/struggle in this video.
 - Music: how the score changes from scene to scene.
 - End: the final lesson, max 6 words.
@@ -262,7 +263,8 @@ it around; vary the story type; never copy stories, characters or signature visu
 - Supporting characters: the SAME tall young build as the hero (never small or chibi), grey
   or tan, each with ONE simple accessory - often a cap, or glasses, headband, scarf.
   Never beanies. Only a real small child in the story is drawn small.
-- Counter (HUD): top-left, small clean font, changes at key story moments.
+- Counter (HUD): only when the story truly needs one (never forced); top-left, small clean
+  font, changes at key story moments.
 
 ## YouTube titles and thumbnails
 - Title: short, blunt and personal, ending with a period. Use one of two forms:
