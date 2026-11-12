@@ -190,6 +190,10 @@ it around; vary the story type; never copy stories, characters or signature visu
   at the low point and the turning point (e.g. climbing floating stairs and dashing through
   the inner voice; punching its words on a punching bag).
 - Before each shot ask: would an image say this deeper than showing it literally?
+- NEVER REPEAT THE SAME DEVICE: the patterns below are a toolbox, not a checklist. Think
+  fresh for every video - sometimes a counter, sometimes an event/date, sometimes neither.
+  Don't put the same trick (a drawing on the fridge, "Saturday", a match) in every story;
+  find a new alternative that fits THIS story.
 - Patterns learned from the 3 reference videos (use the patterns, never their stories):
   - A hurtful word HITS: it sticks on him as red handwriting, with a deep dark impact SFX,
     and he sinks. Later the demon repeats it in his head; the whisper speeds up and layers
