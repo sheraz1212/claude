@@ -233,6 +233,8 @@ it around; vary the story type; never copy stories, characters or signature visu
 - ONE accent colour per video means the habit/struggle (e.g. orange glow, red) and is
   used everywhere it appears (the screen, the inner voice, the highlighted words).
 - Lighting: cold blue = isolation and bad habits; warm amber = hope and good choices.
+- Light must be REALISTIC: a phone lights only a small soft pool on the face and hands near it -
+  never tint the whole body. Never colour a character's body with a light's colour.
 - Hero (my own design, reference image references/hero.png): cream (#F3EBCF), round
   head, a young man's build (taller body, long chunky legs - never a small child), chunky arms, mitten hands, oval feet, dark thin
   outline NO wristband (props are decided per video). He is ONE smooth shape (like references/hero.png):
