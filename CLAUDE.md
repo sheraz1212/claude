@@ -69,6 +69,8 @@ These rules apply to every video made in this project.
   - Clear white text, 40px, REGULAR weight (not bold), Nunito, just above the speaker's head (beside it in close-ups), on a black
     capsule at only ~10% opacity - just a soft shadow behind the words, never a solid pill.
   - Short: 2-5 words.
+  - If the head is near the top of the frame, put the text BESIDE the head (left or right),
+    never squeezed against the top edge - it only has to show clearly who said it.
 - **Words as visuals:** the inner voice / temptation may appear as big words inside the
   scene that the hero can fight (punch them, walk through them, break them).
 - Phones show realistic short messages ("ball tomorrow?", "can't.", "u good bro?").
