@@ -4,95 +4,51 @@ These rules apply to every video made in this project.
 
 ## Music and sound
 
-- The score plays through the WHOLE video, like a film score, and changes with every scene
-  (light theme for normal life, sneaky/comic for the habit, dark piano/cello for pain, impact
-  hits for shocks, orchestral swell for turning points, warm guitar/piano for hope).
-  Only short silences of 1-3 s, and only on purpose (right before a big moment).
-- Mix it full but not too loud: overall mean volume around -18 dB (never quiet or "dead").
-  On-screen instruments (his guitar) sit under the scene, never louder than the score.
-- Match the music to the mood:
-  - Energetic / motivated moments (training, running, starting work): fast retro
-    8-bit chiptune or driving drums.
-  - Emotional / sad moments: dark, low-key piano and cello.
-  - Big turning points: orchestral swell, bass drop, impact hits.
-  - Soft, hopeful moments: acoustic guitar, light piano.
+### BACKGROUND MUSIC (new system - replaces all old score rules)
+- Written as MIDI in Python (`mido`), played with real recorded instruments (FluidSynth +
+  FluidR3 GM soundfont). Original notes only - never copy games, films or songs.
+- THREE LAYERS, mixed per scene like a film mixer:
+  1. WARM PAD (GM 89, the soft "hmmm") - the base of the whole video. It plays almost all
+     the time, overlapping sustained chords. Its volume moves with the scene:
+     - when the MELODY must shine, the pad drops to ~10-20% (still there, not noticeable);
+     - when a scene goes down / turns quiet, the pad comes up and can carry the scene
+       almost alone (pad + soft pedal chords, piano low or gone).
+  2. PIANO CHORDS WITH SUSTAIN PEDAL + big reverb, notes slightly rolled - they stay with
+     the pad through most of the video and give the chord changes (dark/low chords for
+     pain, higher/brighter chords for hope).
+  3. MELODY - piano for normal and hopeful scenes, VIOLIN for sad / painful ones.
+- THE FINALE (the motivational end): a fast piano line + violin melody playing TOGETHER,
+  full and moving; the pads sit far back, very slow, so quiet they are barely noticed.
+- In short: per scene, sometimes the melody goes up, sometimes the pads go up; the pedal
+  chords stay along. Changes are gradual (fades over seconds), never jumpy.
+- DRY piano chords (no pedal) are an option for the hook / opening - but NOT in every
+  video.
+- VARIETY IN EVERYTHING: never the same recipe twice. Change keys, tempos, which layer
+  leads, the hook sound, the finale shape, and add colour instruments where a scene asks
+  (bass drone or timpani heartbeat for dark / tense moments; drums or 8-bit for running /
+  training; orchestra swell for a big turn).
+- Extra pads / atmospheres the owner likes (use for dreamy, lonely, thinking, night
+  scenes, under or instead of the warm pad): Pad 1 New Age (88), FX 1 Rain (96),
+  FX 4 Atmosphere (99), FX 7 Echoes (102), FX 8 Sci-fi (103).
+- Mix: overall mean around -18 dB, never dead silent (short 1-3 s silences only on purpose,
+  right before a big moment). Every outline states the music per scene
+  (e.g. `MUSIC: pad up, pedal chords, no melody`).
+- Save music in `public/music/` with clear mood names.
+
+### SOUND EFFECTS (unchanged)
 - Sound effects play only when something happens on screen (a tray rattles, a door slams,
-  a cup is crushed). Build a varied sound library for each story.
+  a cup is crushed). Build a varied sound library for each story (`public/sfx/`).
 - Special effects (e.g. a dark whisper) are spices: only 1-2 key moments per video.
-- MUSIC IS WRITTEN AS MIDI AND PLAYED WITH REAL RECORDED INSTRUMENTS: compose the notes in
-  Python (`audio/midi_score.py`, library `mido`), render with FluidSynth + the FluidR3 GM
-  soundfont (`apt-get install fluidsynth fluid-soundfont-gm`). Never synthesize the score
-  from raw waves any more - it sounds fake.
-- HOW WE BUILD THE SCORE NOW (tested on "The Window Across"):
-  - Each story section = ONE smooth, legato melody + soft sustained chords underneath at
-    about 20% of the melody's volume.
-  - Sad / painful sections: the melody on VIOLIN (it carries sadness better than piano);
-    normal and hopeful sections: piano.
-  - When the scene's mood changes, the current section FADES OUT completely first, then
-    the next section fades in with its own melody - never two pieces bumped together.
-  - Usually 4-6 sections per video, following the story's big turns.
-- SIGNATURE SOUND = CINEMATIC / AMBIENT PIANO:
-  - The main bed is the piano itself: a deep low chord ("diiimmm"), then repeating notes
-    inside that chord ("tun tun tun tun..."), then the next chord - like cinematic piano.
-  - Change it per scene: tempo, register (low/heavy for pain, middle for normal life,
-    high/light for hope), dark or bright chords. No fixed key or start note.
-  - CONTINUITY FIRST: the score is ONE flowing piece, not pieces glued together. The same
-    "tun tun" pulse keeps running through the video; changes happen only at the big story
-    turns (3-4 sections per video) and always GRADUALLY (volume, register and harmony drift
-    over many seconds). Never switch speed, register or instruments every few seconds.
-  - Ideas, not rules (use judgement per scene): a piano melody on top, between the chords,
-    dark or light, fast or slow with the scene. Intense moment: one big "diiimmm" together
-    with a sound effect, and the "tun tun" can stop. The speed of the "tun tun" follows the
-    scene's energy (slow when quiet, faster when tense or moving).
-  - Other instruments (cellos, violins, horns, celesta...) add melodies only where the
-    scene needs them, on top of the piano.
-  - The soft "hmmm" pad is NOT the main sound. Use it ONLY when a scene stops, drops or
-    turns quietly emotional - never from the start, never through the whole video. When used:
-    overlapping sustained chords, very quiet, ducking under any melody.
-  - Silence is never dead: a very soft room tone / ambience can sit underneath.
-  - Fast scenes (a race, running, rushing) get a fast beat: bright piano runs, quick
-    pizzicato / staccato strings, snare and drums driving the tempo (like the race in
-    "The Kid Who Fell" first version) - no pad there.
-  - The pad is for sad / dark / thinking moments ONLY. Happy, brave and hopeful moments
-    (he helps someone, they run together, he wins) get bright, moving music in a major key:
-    piano + string ensemble + horns + celesta - never the sad "hmmm".
-  - Hook: the black screen may start in silence (only the pen-writing SFX) or with a very
-    soft, warm low note - never a sharp/loud single note. The music comes in with the first scene.
-  - Demon appears (rises from below): a short low-brass swell that rises and cuts off -
-    e.g. trombones, tuba, low horns (vary it per video) - then a soft clap / plate hit.
-  - 8-BIT GAME SFX (original, never copied from any game): when the DEMON appears, play an
-    8-bit villain sting (`public/sfx/demon-8bit-1/2/3.wav` - rotate them); when HEAD TEXT
-    pops up above someone, play an 8-bit pickup "bling" (`public/sfx/pop-8bit-1/2/3.wav` -
-    rotate them). The brass swell stays an option for very dark moments. These go in the
-    VIDEO file (file 1), never in the music file. Script: `audio/sfx_8bit.py`.
-  - FAVOURITE PADS / ATMOSPHERES (FluidR3 GM programs, picked by ear): Pad 1 New Age (88),
-    Pad 2 Warm (89), FX 1 Rain (96), FX 4 Atmosphere (99), FX 7 Echoes (102), FX 8 Sci-fi (103).
-    Use them under quiet, dreamy, thinking or lonely scenes; skip the others unless a scene asks.
-  - These are examples and a palette, not fixed rules: vary instruments and moments.
-  - Scene drops: everything fades out, 2-3 s of no instrument, then piano alone again, the
-    pad joins after 2-4 s. Keep layering different instruments to build the melody.
-  - Music rises and falls exactly with the scene: it lands on cuts and beats.
-  - Mix the pad like a film mixer: full when it plays alone, a bit lower once the piano
-    comes in, and further back when several instruments carry the melody (auto-ducking).
-- Sound effects: keep using the generated SFX library (it works well) AND use instruments as
-  sound effects where a scene needs it (a single piano hit, a timpani boom, a brass stab,
-  a celesta sparkle, a cymbal). Both are options - pick per scene.
-- Save music in `public/music/`
-  and sound effects in `public/sfx/`, with clear mood names (for example
-  `energy-8bit.wav`, `sad-piano.wav`), so any file can be replaced later.
-- Never copy melodies from real games, films or songs. Write only original music.
-- Favourite core of the score: piano, violin, cello and full orchestra (strings, brass,
-  timpani) - they suit our films better than flute or guitar. Still pick instruments per
-  video and per scene, including ones not listed here.
-- Use a WIDE palette of instruments and change them per scene: piano, celesta, music box,
-  organ, cello, violin, contrabass, pizzicato, harp, marimba, xylophone, glockenspiel,
-  vibraphone, timpani, taiko, flute, clarinet, oboe, bassoon, trumpet, horn, tuba,
-  synth pad, synth lead, 8-bit chip, choir, drum kit, claps, bells. Guitar only where the
-  scene really needs it (someone plays one, a campfire) - never the default.
-- The score must never contradict the story: no guitar or guitar-like plucks (pizzicato,
-  harp) while the story says he stopped playing. When the inner voice wins (he stays home,
-  gives up), use DARK KEYS: low piano ostinato, dark organ/pad, low pulse.
-- Every outline states the music for each scene, e.g. `MUSIC: sad-piano`.
+- Use the generated SFX library AND instruments as sound effects where a scene needs it
+  (a single piano hit, a timpani boom, a brass stab, a celesta sparkle, a cymbal).
+- 8-BIT GAME SFX (original, never copied from any game): when the DEMON appears, play an
+  8-bit villain sting (`public/sfx/demon-8bit-1/2/3.wav` - rotate them); when HEAD TEXT
+  pops up above someone, play an 8-bit pickup "bling" (`public/sfx/pop-8bit-1/2/3.wav` -
+  rotate them). A low-brass swell (trombone / tuba / horn) stays an option for very dark
+  demon moments. Script: `audio/sfx_8bit.py`.
+- Hook: the black screen may start with only the pen-writing SFX.
+- All SFX (generated + instrument + 8-bit + whisper) go in the VIDEO file, never in the
+  music file.
 
 ## Text on screen
 
