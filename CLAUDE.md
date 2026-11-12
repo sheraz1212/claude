@@ -235,11 +235,23 @@ it around; vary the story type; never copy stories, characters or signature visu
   - A symbolic object he throws away or breaks at the turning point (the thing he used
     against himself).
   - A mirror can show the demon while he is weak and his own smile at the end.
+  - A DATE / EVENT set up early (a drawing on the fridge: "SATURDAY - MY FIRST MATCH"), so
+    the viewer waits "will he go?"; he misses it, then gets a second chance (a new drawing:
+    "THE FINAL") and makes it.
+  - Bitter irony: he sees the moment he missed on the very thing that made him miss it.
+  - A shock stat card at the low point ("7 HOURS A DAY = 106 DAYS A YEAR").
+  - The fight montage shows ONE relapse (the counter jumps back up) - real, not instant.
+  - The last line answers the first one ("one sec." -> "i saw it.").
+  - The counter can BE the topic (SCREEN TIME TODAY), with the weekday bottom-right.
   - The same dark visual theme in every scene; red only for the demon and its words.
 
 ## Visual style
 - 1920x1080, 30fps, thin black letterbox bars, soft film grain, subtle vignette.
-- Backgrounds are FILLED with flat colour, never just black with line-art:
+- DEFAULT BACKGROUND LOOK (preferred, like classic 2D animation): a near-black / very dark
+  room or street, objects drawn with thin soft grey line-art and dark fills (bed, door,
+  sofa, fence, lockers), one or two lamps / windows / phones giving soft light pools, the
+  characters as the only bright shapes. Simple, clean, cinematic.
+- Alternative look, when a story needs a richer world: backgrounds FILLED with flat colour:
   - three layers: far (sky, skyline with lit windows), middle (fence, wall, lockers,
     shelves), near (floor with markings, bench, props);
   - visible light sources (street lamp, desk lamp, window, phone, sunrise) with a pool of
