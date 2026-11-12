@@ -269,8 +269,8 @@ it around; vary the story type; never copy stories, characters or signature visu
   - Dark background, ONE strong light source (phone glow, lamp, window), and
     ONE symbolic prop from the story (phone, book, alarm clock...).
   - Text and image must say the same idea; readable on a phone screen.
-  - CLICK STYLE (what works on YouTube): marker/brush font (Permanent Marker), white words
-    with a very thick black outline, ONE key word in yellow, a red brush underline, slight
+  - CLICK STYLE (what works on YouTube): HEAVY hand-lettered brush font (Knewave), HUGE
+    words that fill the width, white with a very thick black outline + a dark drop shadow, ONE key word in yellow, a red brush underline, slight
     tilt. The face is drawn just for the thumbnail: big white eyes with tiny pupils, worried
     brows, eye bags, sweat, tears, open mouth, a hand on the head; soft shading + a coloured
     rim light, rough hand-drawn edges, red stress marks, grainy dark background with one warm
