@@ -65,6 +65,9 @@ These rules apply to every video made in this project.
     pops up above someone, play an 8-bit pickup "bling" (`public/sfx/pop-8bit-1/2/3.wav` -
     rotate them). The brass swell stays an option for very dark moments. These go in the
     VIDEO file (file 1), never in the music file. Script: `audio/sfx_8bit.py`.
+  - FAVOURITE PADS / ATMOSPHERES (FluidR3 GM programs, picked by ear): Pad 1 New Age (88),
+    Pad 2 Warm (89), FX 1 Rain (96), FX 4 Atmosphere (99), FX 7 Echoes (102), FX 8 Sci-fi (103).
+    Use them under quiet, dreamy, thinking or lonely scenes; skip the others unless a scene asks.
   - These are examples and a palette, not fixed rules: vary instruments and moments.
   - Scene drops: everything fades out, 2-3 s of no instrument, then piano alone again, the
     pad joins after 2-4 s. Keep layering different instruments to build the melody.
