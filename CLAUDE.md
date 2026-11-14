@@ -51,6 +51,13 @@ These rules apply to every video made in this project.
 - Save music in `public/music/` with clear mood names.
 
 ### SOUND EFFECTS (unchanged)
+- Sources (all safe for YouTube): SFX synthesized in Python (numpy + scipy): filtered noise
+  for paper, cloth, rain, breath, crowd; falling sine waves for thuds, kicks, bounces;
+  stacked sines for metal / glass. 8-bit sounds from square waves. Whisper from espeak-ng.
+  Only real recordings: CC0 packs from Kenney (kenney.nl "RPG Audio", "Impact Sounds") -
+  cloth rustle, door open, glass shatter. Music + instrument effects: original MIDI notes
+  played by FluidSynth with the FluidR3 GM soundfont (MIT licence). Never use copyrighted
+  music, game sounds or unlicensed samples.
 - Sound effects play only when something happens on screen (a tray rattles, a door slams,
   a cup is crushed). Build a varied sound library for each story (`public/sfx/`).
 - Special effects (e.g. a dark whisper) are spices: only 1-2 key moments per video.
