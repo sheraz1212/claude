@@ -49,8 +49,27 @@ These rules apply to every video made in this project.
   right before a big moment). Every outline states the music per scene
   (e.g. `MUSIC: pad up, pedal chords, no melody`).
 - Save music in `public/music/` with clear mood names.
+- Music engine details (see `studio/SOUND-RECIPE.txt` part 2): 60 bpm, one PROG list of
+  (second, chord, piano velocity); pad = root/5th/octave/3rd overlapping 0.6 s, moved only by
+  CC 11 curves; pedal piano re-pedalled at each chord, 5 notes rolled 0.05 s apart, velocity
+  40-88; violin with its own CC 11 swell; reverb CC 91 100-127, FluidSynth room 0.92;
+  every film gets ONE musical idea tied to its story + a new key; finish with
+  acompressor (threshold -26 dB, ratio 2.2) -> mean -18 dB, peak under -1.2 dB, 1.5 s fade.
 
 ### SOUND EFFECTS (unchanged)
+- Full method with code: `studio/SOUND-RECIPE.txt` (follow it for every video). Key points:
+  - Never raw white noise: band-pass per material (paper/pen 1500-7000 Hz, breath/whoosh
+    500-3500, crowd 300-2200, thump/room 40-300, water/rain 900-9000).
+  - Every sound has an envelope (impacts: 1-4 ms attack + exponential decay) and short
+    fades so nothing clicks.
+  - Impacts are layered: a sine with FALLING pitch (body) + a tiny noise click + sometimes a ring.
+  - Paper / tearing = "crackle" (sparse impulses x noise, band-passed). Rooms = quiet brown noise.
+  - Anything with a musical tone (piano hit, timpani, cymbal, celesta, brass) is a tiny
+    MIDI played by FluidSynth with big reverb - never sine waves.
+  - Nothing repeats exactly: random jitter of timing, loudness, pitch.
+  - Each sound has its own real-life level: kick/thud -8 to -12 dB, knock/buzz -13 to -17,
+    pen/cloth/breath -20 to -26, rain/crowd -24 to -27, room tone -30 to -40.
+  - A very quiet room tone runs under the whole film. Final SFX peak under -1 dB.
 - Sources (all safe for YouTube): SFX synthesized in Python (numpy + scipy): filtered noise
   for paper, cloth, rain, breath, crowd; falling sine waves for thuds, kicks, bounces;
   stacked sines for metal / glass. 8-bit sounds from square waves. Whisper from espeak-ng.
