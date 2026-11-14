@@ -16,6 +16,35 @@ These rules apply to every video made in this project.
 - Before any full render: 6-9 check stills per clip, LOOK at them, fix, check again.
 - After joining: verify with `ffmpeg -v error -i file.mp4 -f null -` (must print nothing).
 - Captions get a dark stroke so they stay readable over a cream body.
+- START EVERY NEW STORY FROM A FABLE STORY AS TEMPLATE: copy a folder like
+  `studio/src/one-word/` (base.js + clip files) and `studio/audio/one_word_sfx.py` /
+  `one_word_music.py`, then change places, shots, sounds and notes. Keep Fable's numbers.
+
+### FABLE LOOK + MOTION (copy exactly - this is the channel's style now)
+- Frame: 1920x1080, 30 fps, black letterbox bars 60 px top and bottom, vignette (radial,
+  edges to 55% black), film grain overlay at ~8.5% (3 grain frames cycling).
+- Backgrounds: near-black fills (#16161e, #0a0a0e, #0c0c13), thin grey line-art (#6a6a78),
+  skylines of dark blocks with a few warm lit windows (#d9a657), lamp posts. Light is ADDED
+  with `glow()` (radial gradient, 'lighter' blend) and `pool()` (the same squashed flat on
+  the floor). Warm light rgb 255,190,110; cold light rgb 170,190,235; each story has one
+  accent colour (e.g. purple #A66BFF) used for its symbol and key caption words.
+- Characters: `actor()` draws a person on its own layer and shades one side from the
+  scene's light (dir, amt ~0.25-0.35, small dim); `floorShadow()` under every standing
+  character. Walking with `walker()` (side view, swinging legs and arms, small bob);
+  supporting characters #A9A9B4 grey / #C9A77A tan with one accessory.
+- Camera: EVERY shot has a slow push-in - zoom eases from ~1.0 to ~1.1 (wide) or 1.4 to 1.5
+  (medium) with a small drift of the centre (`setCam(g,{x,y,z})` with `ease(seg(t,a,b))`).
+  Shots last ~4.5-6.5 s. Shot order alternates WIDE (place) -> MEDIUM (the moment) ->
+  REPEATED SHOT -> CLOSE (emotion) -> INSERT/POV, never the same framing twice in a row.
+- Cuts: hard cuts inside a scene; a 0.5 s fade-in (`fin`) when a new place starts;
+  fade-out (`fout`) before a black card. Black cards write on from left to right
+  (Patrick Hand 96 px) with the pen sound.
+- Impacts: a short camera shake (offset sin(t*80)*12 fading over 0.4 s) + a quick flash of
+  the accent colour (40% fading over 0.3 s) + a low thud and a piano low hit.
+- Text sizes: caption 58 px Patrick Hand with a 9 px dark stroke at y=978; head text 40 px
+  Nunito regular; demon words Caveat Brush ~70-90 px red (#ff3a2c); HUD small top-left.
+- The demon: same rig in charcoal, red face, red glow (canvas shadow ~28), embers, fades in
+  over ~0.8 s; in close-ups it is huge (scale ~2.9) behind him.
 
 ## Music and sound
 
@@ -169,7 +198,7 @@ These rules apply to every video made in this project.
 
 ## Signature character: the inner voice (THE DEMON)
 - The channel's recurring antagonist is the hero's own inner soul, made visible
-  (code: `src/common/Demon.tsx`). It is ALWAYS red + black, in every video.
+  (code: `demon()` in `studio/src/common/lib.js`). It is ALWAYS red + black, in every video.
 - Look: exactly the hero's shape (round head, body, legs, mitten hands, oval feet), about
   1.35x his size, charcoal-black body, soft red glow around it, red eyes / brows / mouth,
   red embers rising from its feet.
