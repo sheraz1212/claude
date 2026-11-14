@@ -284,6 +284,12 @@ it around; vary the story type; never copy stories, characters or signature visu
   one outline around the whole silhouette, arms grow out of the shoulders, legs flow out of the body,
   no seam lines at shoulders, wrists, hips or neck - never pieces joined like a robot. Dot eyes and simple eyebrows; emotion from eyebrows,
   eyelids, posture and movement speed. Keep him identical in every video.
+- Hero LEGS AND FEET: simple straight legs, same width all the way down, a clear gap
+  between them (never thick, joined or animal-like), and small flat oval feet under each
+  leg - copy the legs and feet of references/hero.png exactly.
+- NO ROBOT ARMS: the arms of the hero, the demon and every other character are never held
+  dead straight. A resting arm hangs with a soft elbow bend, the two arms are never
+  identical, and they always keep a small slow sway.
 - The hero may get ONE scene prop now and then when it truly fits the moment (e.g. a cap
   on stage at the open mic, a scarf on a winter night) - never in every video or every scene.
 - Supporting characters: the SAME tall young build as the hero (never small or chibi), grey
