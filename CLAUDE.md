@@ -2,6 +2,21 @@
 
 These rules apply to every video made in this project.
 
+## Production pipeline (how videos are built)
+- Build every video with the canvas pipeline in `studio/` (read `studio/HOW-IT-WORKS.md`):
+  HTML canvas 2D + plain JavaScript, rendered by Playwright/Chromium (`studio/render.js`),
+  joined with ffmpeg. One shared kit `studio/src/common/lib.js` (character rig `person()`,
+  demon, captions, head text, camera, film look); one folder per story with `base.js`
+  (places + props) and `clip1.js`...`clip6.js` (shots on one global clock).
+- The hero rig is measured from `references/hero.png`: body melted into one smooth shape,
+  head / hands / feet crisp on top, arms solved with IK (never fully straight), idle sway,
+  soft side shadow and floor shadow.
+- Sound effects are called inside the shots (`sfx(time, 'name', gain)`) so picture and
+  sound share one clock; `audio/<story>_sfx.py` builds the library and mixes the track.
+- Before any full render: 6-9 check stills per clip, LOOK at them, fix, check again.
+- After joining: verify with `ffmpeg -v error -i file.mp4 -f null -` (must print nothing).
+- Captions get a dark stroke so they stay readable over a cream body.
+
 ## Music and sound
 
 ### BACKGROUND MUSIC (new system - replaces all old score rules)
