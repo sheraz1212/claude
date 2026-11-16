@@ -195,6 +195,37 @@ These rules apply to every video made in this project.
 - Tone: emotional and motivational. Always ends with quiet hope, never graphic.
 - Vary the story TYPE from video to video (mystery, comedy mockumentary, reverse story,
   fantasy, sci-fi, bottle story...).
+- Upload schedule: 3 videos a week on Notyet Films - Monday, Wednesday and Friday.
+
+## STORY METHOD (how every story is built - the most important rule for retention)
+Our old mistake: we picked ONE situation as the topic (headphones, one bet, one unanswered
+text) and stretched it over 3 minutes - the same bed / dinner shot again and again. Viewers
+guessed the rest after 20-30 s and left. Never do that again.
+1. Pick a BIG LESSON, not a scene. The title is a broad theme that holds many situations
+   ("SELF RESPECT", "BAD HABITS", "COMPARISON", "MONEY"). The lesson is the topic.
+2. Show it through 4-5 DIFFERENT everyday situations, all with the same root, each a quick
+   10-15 s beat in its own place with its own small wound. Example - self respect: he keeps
+   texting someone who ignores him -> says yes when friends hand him their bags -> gets
+   knocked down and HE says sorry -> laughs along when friends mock him -> runs when she
+   only texts because she needs something. Example - bad habits: vaping -> wasting money
+   with friends -> going to the wrong places -> bunking university -> another activity.
+   Never stretch one situation into a whole video; one situation is never a video's topic.
+3. ONE symbol scores every situation: after each beat a 2-4 s insert shows the symbol
+   change (a price tag crossed out and rewritten, a meter, a number). Rhythm: situation ->
+   score -> situation -> score, so the viewer gets a payoff every ~15 s.
+4. Low point: he realises he did it to himself (the symbol's pen / control was in his hand).
+5. The turn back MIRRORS the fall: the SAME 4-5 situations in the same places, now reversed
+   (he says no, he doesn't carry the bag, the other person says sorry, he doesn't reply),
+   and the symbol climbs back with each one. No new places are needed for the recovery.
+6. The demon only acts small and physical (e.g. a hand that lowers the score) and says
+   varied lines that fit each situation; at the end he takes the control back and it breaks.
+7. Few words: one-line captions, 2-3 word head text. No 4 s black hook - the first scene
+   starts at second 0 with the hook line over it.
+8. End: one last image that proves the change is real, then the short lesson card.
+9. Never reuse a twist or moral from an earlier video (e.g. "his little brother copies the
+   habit" was already used) - each video needs its own pain point and turn.
+- When giving ideas, each idea also lists its 4-5 situations (fall) and how each one is
+  reversed (recovery), plus the symbol that scores them.
 
 ## Signature character: the inner voice (THE DEMON)
 - The channel's recurring antagonist is the hero's own inner soul, made visible
@@ -226,11 +257,12 @@ it around; vary the story type; never copy stories, characters or signature visu
 
 ## How to write a story outline (after I pick an idea)
 - 2:40-3:30, built from 5-6 clips of 30-35 seconds each.
-- Structure: hook + normal life -> the habit starts -> the habit repeats (same shot again
-  and again, counter jumping) -> the cost -> low point -> wisdom lines + tiny decision ->
-  the fight (montage) -> the mirrored ending -> lesson card.
-- REPETITION: show the habit by repeating the SAME shot (same alarm, same bed, same
-  phone) with small changes and a jumping counter; at the end repeat it once more, reversed.
+- Structure (see STORY METHOD): hook scene from second 0 -> 4-5 different situations of the
+  same lesson, each followed by the symbol dropping -> low point ("he did it to himself") ->
+  wisdom lines + tiny decision -> the same situations mirrored, the symbol climbing back ->
+  final proof image -> lesson card.
+- REPETITION: what repeats is the SYMBOL insert (the score), not the same scene. A place may
+  come back only as the mirrored version of its situation in the recovery.
 - LOCATIONS: 3-4 core locations that return in different states (friends there -> gone ->
   back) + 3-4 one-off places (6-8 in total). New locations compared with earlier videos.
 - Before building, check the outline against CLARITY FIRST and VARIETY.
