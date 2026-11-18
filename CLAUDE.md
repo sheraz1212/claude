@@ -11,6 +11,10 @@ These rules apply to every video made in this project.
 - The hero rig is measured from `references/hero.png`: body melted into one smooth shape,
   head / hands / feet crisp on top, arms solved with IK (never fully straight), idle sway,
   soft side shadow and floor shadow.
+- HUMAN ARMS: elbows hang down and outward by gravity (automatic in `person()`); hand targets
+  come from `pose(name, x, y, s)` in lib.js (phone, phone2, ear, dribble, shoot/cheer, wave,
+  table, hold, face) - never guessed numbers. Seated people talking: side view with bent legs
+  reads better than front view. Walking (`walker()`) stays as it is.
 - Sound effects are called inside the shots (`sfx(time, 'name', gain)`) so picture and
   sound share one clock; `audio/<story>_sfx.py` builds the library and mixes the track.
 - Before any full render: 6-9 check stills per clip, LOOK at them, fix, check again.
@@ -148,8 +152,9 @@ These rules apply to every video made in this project.
 
 ## Story opening and ending
 
-- Every story opens with a hook: a black screen with one short line centred in the
-  middle, with ONE key word highlighted in the accent colour, then the first scene.
+- Every story opens with a hook: the FIRST SCENE starts at second 0 with one short hook
+  line written over it (top of frame, ONE key word in the accent colour). Never a long black
+  screen before the story (analytics: we lost ~60% of viewers in the first 15 s).
 - Every black-screen line (hook, chapter break, wisdom lines, lesson) appears with a soft
   handwriting / pen-on-paper sound effect while the text writes on.
 - A black screen with one centred line may be used mid-story as a chapter break.
@@ -227,6 +232,26 @@ guessed the rest after 20-30 s and left. Never do that again.
 - When giving ideas, each idea also lists its 4-5 situations (fall) and how each one is
   reversed (recovery), plus the symbol that scores them.
 
+## WHAT THE CHANNEL ANALYTICS TAUGHT US (check every video against this)
+Data (Notyet Films, first videos): COMPARISON 818 impressions / CTR 1.59% / 19 views / ~21 s
+average view; LUST 415 / 1.69% / 14 views / 0:27 average (13%); SACRIFICE 120 / 3.33% / 7 views.
+LUST retention: 100% -> ~40% in the first 15 s, ~15-20% by 40 s, then flat ~10% to the end.
+1. The first 15 s decide the video. Frame 1 is already the story (no black intro, no slow
+   establishing shot); the topic is clear by 5 s; the first situation lands by 10 s.
+2. Viewers who pass ~40 s stay to the end - the story itself works. The drop comes from a
+   slow start and from predictable repetition, so a new situation + symbol payoff every
+   10-15 s (STORY METHOD) is what keeps them.
+3. CTR ~1.6% is too low: title + thumbnail must ask ONE question the viewer feels
+   ("STILL SCROLLING?", "ALL IN?"), the hero's face shows one huge emotion, ONE glowing
+   prop, only the hero unless a second character is the point. Title and thumbnail say
+   the same idea in different words.
+4. Shorts work (they got response). Every film gets 1-2 Shorts (vertical 1080x1920, 35-45 s):
+   either a re-edit of the film's own shots (`studio/src/<story>-shorts/`) that stops on the
+   twist as a cliffhanger, or a compressed fall with the symbol. They end on a black card
+   "Visit the channel for the full video." and link the film as the Short's Related video.
+   Shorts music is mixed in at -10 dB (deliver one final file per Short).
+5. Upload Monday / Wednesday / Friday; the Shorts go out 1-3 days after their film.
+
 ## Signature character: the inner voice (THE DEMON)
 - The channel's recurring antagonist is the hero's own inner soul, made visible
   (code: `demon()` in `studio/src/common/lib.js`). It is ALWAYS red + black, in every video.
@@ -244,7 +269,7 @@ guessed the rest after 20-30 s and left. Never do that again.
 When I ask for ideas, give 10 ORIGINAL ideas, each in this exact format:
 **N. Title** (2-3 words)
 One sentence: the struggle shown as ONE central image that changes through the story.
-- Hook: the black-screen opening line, max 6 words, one highlighted word.
+- Hook: the opening line written over the first scene, max 6 words, one highlighted word.
 - Counter: optional (DAY 1 -> 340, NIGHT 1 -> 30...), only if it fits. NEVER force a
   counter into a story where it doesn't belong - then write "Counter: none".
 - Accent colour: the one colour that means the habit/struggle in this video.
