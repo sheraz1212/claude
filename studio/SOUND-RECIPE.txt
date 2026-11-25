@@ -1,0 +1,239 @@
+SOUND RECIPE: how the sound effects and background music in these videos are made
+==================================================================================
+
+This is written for another AI. Everything is made with code. The real scripts are in the
+project zip under audio/ (for example audio/one_word_sfx.py and audio/one_word_music.py).
+Read those for the exact numbers; this file explains the method.
+
+Tools: Python (numpy, scipy.signal, mido), FluidSynth with the FluidR3 GM soundfont,
+espeak-ng, ffmpeg.
+
+    apt-get install -y fluidsynth fluid-soundfont-gm espeak-ng ffmpeg
+    pip install numpy scipy mido
+
+
+PART 1 - SOUND EFFECTS
+----------------------
+
+The ten rules that matter most
+
+1. Never use raw white noise. Every noise is band-pass filtered, and the band is chosen
+   for the material:
+   - paper, pen, fabric edge: 1500-7000 Hz
+   - breath, wind, whoosh: 500-3500 Hz
+   - crowd, murmur: 300-2200 Hz
+   - body, thump, room: 40-300 Hz
+   - water, hiss, rain: 900-9000 Hz
+
+2. Every sound has an envelope. Impacts: attack of 1-4 ms, then exponential decay
+   (np.exp(-t * k), k between 15 and 80). Soft sounds: a slow rise and fall drawn with
+   np.interp. Always fade the first and last few milliseconds so there is no click.
+
+3. Impacts are layered, never one tone:
+   - a low body: a sine whose pitch FALLS during the hit (for example 130 Hz to 70 Hz)
+   - a click: a very short burst of filtered noise
+   - sometimes a ring: one or two higher sines that decay more slowly
+
+4. Paper, tearing, peeling and crinkling use "crackle": sparse random impulses, smeared by
+   a short decay, multiplied by noise, then band-passed. Dense impulses = tearing; sparse =
+   a crinkle.
+
+5. Rooms and ambiences use BROWN noise (the running sum of white noise, with the drift
+   removed), band-passed to 40-240 Hz, and kept very quiet (-30 to -40 dB peak).
+
+6. Anything with a musical tone (a piano hit, a timpani boom, a cymbal, a celesta sparkle,
+   a brass swell) is NOT synthesized from sine waves. It is a tiny MIDI file played by
+   FluidSynth with a real soundfont and a big reverb. This is the biggest single reason
+   the effects sound real instead of "beepy".
+
+7. Nothing repeats exactly. A seeded random generator jitters timing, loudness and pitch
+   of footsteps, coughs, pen strokes and so on.
+
+8. Motion sounds move. An engine or a ball has a pitch curve over time; a whoosh is three
+   noise bands whose loudness peaks one after another.
+
+9. Each sound is normalised to its own peak level, chosen by how loud that thing is in life:
+   - kick, deep thud, timpani: -8 to -12 dB
+   - phone buzz, knock, cough: -13 to -17 dB
+   - pen, cloth, page turn, breath: -20 to -26 dB
+   - rain, crowd bed, car hum: -24 to -27 dB
+   - room tone, night air: -30 to -40 dB
+   Quiet things stay quiet. The mix sounds cheap when everything is the same loudness.
+
+10. The picture decides the timing. Each clip calls sfx(time, name, gain) right next to
+    the action it draws. The mixer reads those events and drops each sound at that second.
+    A constant very quiet room tone runs under the whole film, so it is never dead silent.
+    The final mix is scaled only if the peak goes above about -1 dB.
+
+Helpers used by every sound
+
+    import numpy as np
+    from scipy.signal import butter, sosfilt, fftconvolve
+    SR = 44100
+    rng = np.random.default_rng(11)
+    def filt(x, kind, f, o=2): return sosfilt(butter(o, f, kind, fs=SR, output="sos"), x)
+    def noise(d): return rng.standard_normal(int(SR * d))
+    def brown(d):
+        x = np.cumsum(noise(d)); return x - np.linspace(x[0], x[-1], len(x))
+    def tt(d): return np.arange(int(SR * d)) / SR
+    def norm(x, db): return x / (np.abs(x).max() + 1e-9) * 10 ** (db / 20)
+    def fade(x, a=0.01, r=0.03):
+        x = x.copy(); na, nr = max(1, int(SR*a)), max(1, int(SR*r))
+        x[:na] *= np.linspace(0, 1, na); x[-nr:] *= np.linspace(1, 0, nr); return x
+    def env(t, pts): return np.interp(t, [p[0] for p in pts], [p[1] for p in pts])
+
+Example 1 - a ball bounce (layered impact with a falling pitch)
+
+    t = tt(0.22)
+    f = np.interp(t, [0, 0.22], [130, 70])                      # pitch falls
+    body  = np.sin(2*np.pi*np.cumsum(f)/SR) * np.exp(-t*26)
+    click = filt(noise(0.22), "band", [300, 2500]) * np.exp(-t*90) * 0.5
+    ring  = np.sin(2*np.pi*240*t) * np.exp(-t*35) * 0.25
+    bounce = norm(fade(body + click + ring, 0.001, 0.03), -12)
+
+Example 2 - paper being peeled (crackle)
+
+    d = 0.85; t = tt(d)
+    density = np.interp(t, [0, d], [0.004, 0.03])                # more crackles near the end
+    imp = (rng.random(len(t)) < density) * rng.uniform(0.3, 1, len(t))
+    crack = filt(np.convolve(imp, np.exp(-np.arange(200)/25), "same") * noise(d), "band", [1500, 6500])
+    hiss  = filt(noise(d), "band", [2500, 6000]) * env(t, [(0, 0.05), (d*0.9, 0.3), (d, 0)])
+    peel  = norm(crack * env(t, [(0,0),(0.1,0.7),(d*0.92,1),(d,0)]) * 3 + hiss, -13)
+
+Example 3 - a room tone
+
+    d = 8
+    x = filt(brown(d), "band", [40, 240]); x = x / np.abs(x).max() * 0.5
+    room = norm(fade(x, 0.4, 0.6), -40)
+
+Example 4 - an instrument used as an effect (a low piano hit)
+
+    Write a MIDI file with mido: program 0 (piano), reverb send CC 91 = 127, sustain pedal
+    CC 64 = 127, three notes (D2, A2, D3) a few milliseconds apart at velocities 78, 70, 62.
+    Render it:
+    fluidsynth -ni -F hit.wav -r 44100 -g 1 -o synth.reverb.room-size=0.9 -o synth.reverb.level=0.9 /usr/share/sounds/sf2/FluidR3_GM.sf2 hit.mid
+    Then fade the tail over 1 second and normalise to -11 dB.
+
+Example 5 - the inner voice (the whisper)
+
+    espeak-ng -v en-us+whisper -s 85 -p 5 -w w.wav "one more"
+    Then in Python:
+    - resample so it plays at 0.74 speed (this also lowers the pitch)
+    - low-pass at 3200 Hz, high-pass at 160 Hz
+    - add four echoes: delays 0, 0.36, 0.72, 1.08 s at gains 1, 0.42, 0.2, 0.09
+    - add reverb: convolve with 2 seconds of low-passed noise that decays exponentially,
+      mixed about 60% wet
+    - fade in 20 ms, fade out 0.8 s, normalise to -15 dB
+
+Reverb used above
+
+    def reverb(x, d=1.6, wet=0.5):
+        ir = filt(noise(d) * np.exp(-tt(d) * 5 / d), "low", 3500)
+        w = fftconvolve(x, ir)[: len(x) + int(SR*d)]
+        w = w / (np.abs(w).max() + 1e-9) * np.abs(x).max()
+        out = np.zeros(len(w)); out[: len(x)] += x * (1 - wet*0.5)
+        return out + w * wet
+
+
+PART 2 - BACKGROUND MUSIC
+-------------------------
+
+The method
+
+1. Tempo is 60 bpm. One beat is one second, so a chord change can be written at the exact
+   second of a cut. In mido: ticks_per_beat = 480 and set_tempo = 1000000.
+
+2. The whole score is driven by one list of chord changes:
+   PROG = [(second, chord name, piano velocity), ...]
+   The chord list follows the scenes: minor and low for pain, major and higher for hope.
+
+3. Layer 1, the warm pad (General MIDI program 89, zero-based). It plays root, fifth,
+   octave and third of every chord, each chord overlapping the next by 0.6 s so there is
+   never a gap. Its loudness is NOT changed by velocity; it is moved by an expression curve
+   (MIDI CC 11) written as points (second, value) and interpolated every 0.12 s. The pad
+   goes up when a scene is quiet or dark, and down to about 20-30 when a melody plays.
+
+4. Layer 2, pedal piano chords (program 0). At each chord change: sustain pedal off for
+   0.06 s, then on (CC 64). The five notes are ROLLED, each 0.045-0.05 s after the last,
+   each one velocity lower than the one before. Dark scenes use the low voicing
+   (root, +7, +12, +12+third, +19). Bright scenes use the same shape one octave higher.
+   Velocities stay between 40 and 88. Soft playing is what makes it sound like a film.
+
+5. Layer 3, melody. Short hand-written note lists (second, length, MIDI note). Piano for
+   normal and hopeful scenes, violin (program 40) for painful ones. The violin always has
+   its own CC 11 curve that swells in and fades out, so notes do not start flat.
+
+6. Colours, only where a scene asks for them:
+   - FX atmosphere (99) + contrabass drone (43) + timpani heartbeat (47) for the low point;
+     the heartbeat interval shrinks by 10% each beat so it speeds up
+   - strings (48) with a rising CC 11 curve for a big turn
+   - drums on channel 10 (kick 36, snare 38, closed hat 42) for running and training
+   - a second pad (New Age 88, FX Echoes 102 or FX Sci-fi 103) for night or inner scenes
+
+7. Every film gets ONE musical idea of its own, tied to its story, plus a new key:
+   - a phrase answered by its own copy an octave higher (the little brother who copies)
+   - one low dry note that repeats more and more often (the word he keeps repeating)
+   This is what stops the scores from sounding alike.
+
+8. Big reverb. Every channel sends to reverb with CC 91 between 100 and 127, and
+   FluidSynth runs with a large, bright room:
+   fluidsynth -ni -F raw.wav -r 44100 -g 0.7 -o synth.reverb.room-size=0.92 -o synth.reverb.damp=0.25 -o synth.reverb.width=1 -o synth.reverb.level=0.95 -o synth.polyphony=512 /usr/share/sounds/sf2/FluidR3_GM.sf2 score.mid
+
+9. Finishing in ffmpeg: gentle compression so quiet scenes stay audible, then set the mean
+   level to about -18 dB, then a 1.5 s fade-out, padded to the exact film length.
+   Filter: acompressor=threshold=-26dB:ratio=2.2:attack=60:release=900:makeup=1
+   Measure with the volumedetect filter, then apply volume=<gain>dB where
+   gain = min(-18 - mean, -1.2 - peak).
+
+10. Changes are gradual. Layers fade over one to three seconds through the CC 11 curves.
+    The only sudden events are on purpose: a hit when something lands, and one or two
+    seconds of near silence right before the biggest moment.
+
+Skeleton of a score
+
+    import mido
+    ev = []
+    def cc(ch, t, c, v): ev.append((t, mido.Message("control_change", channel=ch, control=c, value=int(v))))
+    def note(ch, t, d, n, v):
+        ev.append((t, mido.Message("note_on", channel=ch, note=n, velocity=int(v))))
+        ev.append((t + d - 0.01, mido.Message("note_off", channel=ch, note=n)))
+    def curve(ch, pts, step=0.12):                      # expression over time
+        for (t0, v0), (t1, v1) in zip(pts, pts[1:]):
+            k = max(1, int((t1 - t0) / step))
+            for i in range(k): cc(ch, t0 + (t1 - t0) * i / k, 11, v0 + (v1 - v0) * i / k)
+
+    PAD, PNO = 0, 1
+    for ch, prog in ((PAD, 89), (PNO, 0)):
+        ev.append((0, mido.Message("program_change", channel=ch, program=prog))); cc(ch, 0, 91, 120)
+
+    R = dict(A=33, F=29, C=36, G=31)                    # low roots
+    def chord(name): return R[name.rstrip("m")], (3 if name.endswith("m") else 4)
+    PROG = [(0, "Am", 0), (4.5, "C", 58), (6.5, "G", 56), (8.5, "Am", 56)]
+
+    for i, (t, name, v) in enumerate(PROG):
+        end = PROG[i + 1][0] if i + 1 < len(PROG) else 12
+        r, th = chord(name)
+        for n in (r, r + 7, r + 12, r + 12 + th): note(PAD, t, end - t + 0.6, n, 70)      # pad
+        if v:
+            cc(PNO, t - 0.06, 64, 0); cc(PNO, t, 64, 127)                                  # re-pedal
+            for j, n in enumerate((r, r + 7, r + 12, r + 12 + th, r + 19)):
+                note(PNO, t + j * 0.05, end - t, n, v - j)                                 # rolled chord
+    curve(PAD, [(0, 0), (3, 70), (4.5, 30), (12, 30)])
+
+    ev.sort(key=lambda e: e[0])
+    mid = mido.MidiFile(ticks_per_beat=480); tr = mido.MidiTrack(); mid.tracks.append(tr)
+    tr.append(mido.MetaMessage("set_tempo", tempo=1000000, time=0)); last = 0
+    for t, m in ev:
+        tk = int(round(max(0, t) * 480)); m.time = tk - last; last = tk; tr.append(m)
+    mid.save("score.mid")
+
+
+PART 3 - WHAT TO CHECK
+----------------------
+
+- Each sound alone: peak level as planned, no click at the start or end.
+- The SFX track: peak under -1 dB, same length as the film.
+- The music: mean about -18 dB, peak under -1 dB, same length as the film.
+- Measure four-second windows across the music so no section is far quieter than the rest.
+- The author of this recipe cannot hear audio. Levels were measured, not listened to.
+  A person must listen to every mix.

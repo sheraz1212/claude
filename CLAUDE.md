@@ -129,9 +129,19 @@ This section is the owner's latest decisions. If anything further down disagrees
   seated people behind a table use `hip: true, thigh: 20` + `pose('table', x, y, s, {hip:true,
   tableY})`; a camera split must also shift `toScreen`; use python for text replacements
   (sed breaks on special characters); never `rm` with variables in the path.
-- Git: only CLAUDE.md is committed, with `git -c user.email=<owner email> -c user.name=sheraz1212
-  commit` and the session trailers, then `git push -q origin main` and copy it to
-  `/home/user/CLAUDE.md`. Code and videos never go to GitHub.
+- Git: the CODE is on GitHub (owner's decision, Nov 2026): CLAUDE.md, RESTORE.txt, references/,
+  studio/src, studio/audio, studio/render.js, studio/*.md|txt, studio/references, studio/public/fonts,
+  studio/public/sfx, src/ (Remotion thumbnails), package files, public/fonts, public/outro and the
+  channel outro (outro-VIDEO-SFX.mp4, outro-MUSIC.m4a). These paths are in .git/info/exclude, so add
+  them with `git add -f <path>`. NEVER commit story videos, music .wav files, thumbnails or node_modules.
+  After building a film, commit its new code (studio/src/<story>, studio/audio/<story>_*.py, new
+  sfx wavs, src/*Thumb.tsx, Root.tsx) with `git -c user.email=<owner email> -c user.name=sheraz1212
+  commit` and the session trailers, then `git push -q origin main`, and copy CLAUDE.md to
+  `/home/user/CLAUDE.md`.
+- New session / empty container: if `studio/` is missing, the code is in this GitHub repo (or the
+  owner uploads `notyet-studio-backup.zip`). Follow RESTORE.txt (tools: ffmpeg, fluidsynth +
+  FluidR3_GM.sf2, espeak-ng, python mido numpy scipy pillow, Playwright; `npm install` for Remotion).
+  Music .wav files are not stored - rebuild them with `python3 studio/audio/<story>_music.py`.
 
 ## Production pipeline (how videos are built)
 - Build every video with the canvas pipeline in `studio/` (read `studio/HOW-IT-WORKS.md`):

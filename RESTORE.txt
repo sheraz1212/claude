@@ -1,0 +1,25 @@
+NOTYET FILMS - STUDIO BACKUP (code + fonts + sound library; no videos, no music files)
+
+HOW TO USE IN A NEW CLAUDE SESSION
+1. Upload this zip to the new session and say: "unzip this into /home/user/claude and read CLAUDE.md".
+2. Unzip at /home/user/claude (folders land as studio/, src/, public/, references/ ...).
+3. System tools needed (most cloud containers already have them):
+     apt-get install -y ffmpeg fluidsynth fluid-soundfont-gm espeak-ng
+     pip install mido numpy scipy pillow
+     Playwright + Chromium (preinstalled in Claude cloud; render.js uses require('playwright'))
+     FluidR3 soundfont at /usr/share/sounds/sf2/FluidR3_GM.sf2
+4. Thumbnails (Remotion): in /home/user/claude run  npm install  once.
+5. Music .wav files are NOT included (too big) - every film's score is rebuilt by its
+   script: python3 studio/audio/<story>_music.py
+6. outro-VIDEO-SFX.mp4 + outro-MUSIC.m4a (channel outro) are included at the top level.
+
+WHAT IS INSIDE
+- CLAUDE.md                     all channel rules + section 0 (everything learned)
+- studio/src/common/lib.js      the hero rig, demon, captions, camera, film look
+- studio/src/<story>/           every film (base.js + clipN.js); latest = rebuilding/
+- studio/src/<story>-shorts/    the Shorts re-edits
+- studio/audio/                 SFX + music scripts per film (latest = rebuilding_*.py)
+- studio/render.js, HOW-IT-WORKS.md, SOUND-RECIPE.txt
+- studio/public/fonts, studio/public/sfx   fonts and the generated sound library
+- src/*Thumb.tsx, src/Root.tsx, package.json ...   Remotion thumbnails
+- references/hero.png           the hero design

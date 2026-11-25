@@ -1,0 +1,26 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:"Patrick Hand";src:url("../public/fonts/PatrickHand-Regular.ttf")}
+@font-face{font-family:"Nunito";src:url("../public/fonts/Nunito[wght].ttf");font-weight:200 1000}
+@font-face{font-family:"Caveat Brush";src:url("../public/fonts/CaveatBrush-Regular.ttf")}
+html,body{margin:0;background:#000}canvas{display:block}
+</style></head>
+<body><canvas id="c" width="1920" height="1080"></canvas>
+<svg width="0" height="0" style="position:absolute" id="goos"></svg>
+<script>
+// "melt" filters: blur, then a hard alpha threshold. One per blur size (in screen pixels).
+document.getElementById('goos').innerHTML = Array.from({ length: 48 }, (_, i) => `<filter id="goo${i + 1}" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceGraphic" stdDeviation="${i + 1}"/><feColorMatrix mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -9.4"/></filter>`).join('');
+</script>
+<script>if (new URLSearchParams(location.search).has('portrait')) { const c = document.getElementById('c'); c.width = 1080; c.height = 1920; }</script>
+<script src="common/lib.js"></script>
+<script>
+const clip = new URLSearchParams(location.search).get('clip') || 'tomorrow-wall/clip1';
+const load = src => new Promise(r => { const s = document.createElement('script'); s.src = src; s.onload = r; document.body.appendChild(s); });
+(async () => {
+  await load(clip.split('/')[0] + '/base.js'); await load(clip + '.js'); if (window.WAIT) await window.WAIT;
+  await Promise.all(['58px "Patrick Hand"', '400 40px Nunito', '700 40px Nunito', '40px "Caveat Brush"'].map(f => document.fonts.load(f)));
+  window.G = document.getElementById('c').getContext('2d');
+  window.READY = true;
+})();
+</script></body></html>
