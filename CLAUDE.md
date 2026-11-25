@@ -139,7 +139,7 @@ This section is the owner's latest decisions. If anything further down disagrees
   commit` and the session trailers, then `git push -q origin main`, and copy CLAUDE.md to
   `/home/user/CLAUDE.md`.
 - New session / empty container: if `studio/` is missing, the code is in this GitHub repo (or the
-  owner uploads `notyet-studio-backup.zip`). Follow RESTORE.txt (tools: ffmpeg, fluidsynth +
+  owner uploads the 3 backup zips `notyet-backup-1-code.zip`, `-2-sounds.zip`, `-3-sounds.zip`). Follow RESTORE.txt (tools: ffmpeg, fluidsynth +
   FluidR3_GM.sf2, espeak-ng, python mido numpy scipy pillow, Playwright; `npm install` for Remotion).
   Music .wav files are not stored - rebuild them with `python3 studio/audio/<story>_music.py`.
 
