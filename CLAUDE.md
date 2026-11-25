@@ -2,6 +2,137 @@
 
 These rules apply to every video made in this project.
 
+## 0. READ THIS FIRST - EVERYTHING WE LEARNED (updated Nov 2026, overrides older lines below)
+This section is the owner's latest decisions. If anything further down disagrees, THIS section wins.
+
+### 0.1 How to work with the owner
+- The owner writes in Roman Urdu (Urdu in Latin letters). Answer in short, clear Roman Urdu.
+  All on-screen text (captions, hook, cards, titles, package) stays in English.
+- Workflow for every video:
+  1. Story: either the owner gives a story (often 4-10 lines, sometimes from Gemini) or asks for
+     ideas. If he gives one, rate it honestly (x/10), say what is good, what breaks our rules,
+     and propose concrete fixes. Do not build until he says "bna do / yes / bnao".
+  2. Show a compact OUTLINE (clips, shots with timing, captions, head text, demon lines, symbol,
+     music per section). Wait for his OK.
+  3. Build clip by clip, check stills, render, join, deliver.
+- Never silently change his idea. If something must change (rules, copying, clarity), explain
+  why in 2-3 lines and offer the alternative; he decides.
+- Give story ideas only in the format of "How to give story ideas" below - 10 ideas, each with
+  fall situations, recovery, symbol, twist. He rejects ideas that feel used before - always
+  give FRESH topics and say if an idea is close to an earlier video.
+
+### 0.2 What makes a story work for HIM (most important lesson)
+- He liked: THE LIFE HE POSTED and ONE CARD AT A TIME - stories HE wrote: literal, real
+  everyday life (a guy, his room, his phone, his mom/sister/brother, a real problem).
+- He disliked (called them "fazool"): THE RED STRING (threads from the head + split screens) and
+  THE LAST WORD (brick walls between people). Concept-heavy metaphors felt fake.
+- So: REAL LIFE FIRST. One clear human problem, real places, real family. Metaphor only as a
+  small layer (cracks on the body, a demon whisper) - never the whole story.
+- NEVER COPY another channel. He sometimes sends a reference video (e.g. Day One Films "You're
+  Not Broken": math test F, girl says no, tryouts, a mug fixed with gold, "Broken isn't
+  finished"). Learn the PATTERN only. If his draft repeats their situations, lines or signature
+  visual, tell him and change them (other situations, other object, own wording, own ending).
+- Never reuse our own earlier topics/twists either (fake life + likes, comparison, gambling,
+  excuses/procrastination, anger, overthinking, exam stress, people pleasing, ego/arguments,
+  cracks-and-gold self-worth are DONE).
+
+### 0.3 Names, characters, demon
+- The hero has NO NAME. Captions always say "he". Never Pakistani/Indian names (US audience).
+  Others by role: "his mom", "his big sister", "his best friend", "his coworker". If a name is
+  truly needed (a chat header), use a short American name (Danny, Mike, Leo).
+- Women/girls: accessory 'longhair'. Available accessories in person(): cap, glasses, longhair,
+  scarf ONLY (anything else draws nothing).
+- DEMON = the inner voice, used SPARINGLY like a horror-film ghost: mostly a whisper + red text
+  (Caveat Brush) at 1-3 key moments; the full demon appears at most 1-2 times (a big moment),
+  and at the end it breaks (glass shatter / golden or red beam). Never a friend, never a role.
+  When it speaks, ALSO show its words as red text (whisper + red text together).
+- Each situation can have its own demon line ("you're not smart enough.", "she'd never pick
+  you.", "you break everything.", "you can't do it.").
+
+### 0.4 FRAMING - nothing important may leave the frame (he had to upload a video with the demon's head cut off)
+- Every head (hero, demon, others), every head text, demon text and caption must be fully
+  inside the visible frame (inside the 60 px letterbox bars), in EVERY shot, landscape and
+  vertical. A huge demon must be scaled/placed so its whole head is visible.
+- In the stills check, look specifically at: heads at the top edge, people at the left/right
+  edge, long red text running off screen, head text overlapping signs. Fix before rendering.
+- No split screens with stacked halves (heads got cut). Side-by-side split calls are OK only if
+  both faces are fully visible.
+- Put demon/whisper text in screen space so it always fits:
+  `demonText(g, text, CAM.x + (W*0.5 - W/2)/CAM.z, CAM.y + (H*0.2 - H/2)/CAM.z, t, a, 80)`.
+
+### 0.5 Length, pacing, ending
+- Length is flexible 2:30-4:00 - only as long as the story needs, never stretched.
+- Pacing per scene (NOT a fixed rule): normal shots ~5-6 s, inserts ~3-4 s, emotional shots
+  longer. He found 3-4 s shots too fast. Montages are fast but short (~15-20 s total).
+- Ending: proof image -> lesson card (black, pen write-on) -> the CHANNEL OUTRO (7 s, files
+  `/home/user/claude/outro-VIDEO-SFX.mp4` and `outro-MUSIC.m4a`) appended to BOTH deliverables.
+  (Sometimes he asks for the moral before the last scene instead - follow his outline.)
+
+### 0.6 Music decisions
+- Mean about -18 dB for the whole score; measure loudness per 10 s and fix loud/quiet spots.
+  Use the finish chain `acompressor=threshold=-26dB:ratio=2.2:attack=60:release=900:makeup=1,
+  alimiter=limit=0.2:attack=4:release=120:level=false`, then gain = min(-18-mean, -1.2-peak).
+- After the turn a gentle beat MAY fade in gradually (never all at once), drums on top, piano
+  lower - he liked that once (Excuses). He did NOT like drums under a montage.
+- Montages (training / DAY 1->10 / progress): an ORIGINAL 8-bit retro loop (GM 80 square lead
+  arpeggio + GM 81 saw melody + GM 38 synth bass), NO drums. "Like Super Mario" means that FEEL -
+  never copy any game melody.
+- No drums elsewhere unless he asks.
+
+### 0.7 Deliverables and files
+- Long video: (1) `<story>-VIDEO-SFX.mp4` (all SFX + whisper + outro audio), (2) `<story>-MUSIC.m4a`
+  (same length incl. outro music), (3) `<story>-thumbnail.png` (1280x720).
+- Short: ONE file `<story>-short-FINAL.mp4` (1080x1920, SFX + music mixed at -10 dB).
+- The YouTube PACKAGE is given IN THE CHAT ONLY - never as a .md file. It contains:
+  at least 5 title options (mark one recommended), thumbnail text idea, description in a code
+  block, tags in a code block, chapters in a code block, pinned comment question, and for a long
+  video a suggestion for the Short.
+- Deliverables live in `/home/user/claude/` and must stay out of git: add their name pattern to
+  `.git/info/exclude`. Only CLAUDE.md is ever committed/pushed. Delete intermediate clip mp4s.
+- Thumbnails: Remotion components in `src/*Thumb.tsx` (import Defs, ShockedHero, Title, YEL from
+  `./PocketThumb`), register in `src/Root.tsx`, render with
+  `./node_modules/.bin/remotion still <Id> <file>.png`. Only the hero, one glowing prop, 1-3 huge
+  words ending with "." or "?". He may ask for 2 versions (e.g. EXAM STRESS / EXAM PRESSURE).
+  Different composition per video (e.g. hero with an open book, bloodshot eyes).
+
+### 0.8 How a film is built (technical recipe that works)
+- Start from the LATEST story folder as template: `cp studio/src/rebuilding/base.js` (it
+  contains every place and prop made so far), strip its header comment, set the new
+  accent on the `const ACC = ...` line (CHECK it really changed: `grep -n "^const ACC" base.js`).
+  Add new places/props at the end of base.js.
+- One `clipN.js` per ~30-35 s: `const T = [start, ...shot boundaries..., end]`, shot functions
+  `(g, t, a, b)`, `sN.fin = 0.4` for a fade-in at a new place, `.fout` before a card,
+  `defineClip(start, T, [s1, ...])`. Cards: `card(text)` / `card2(line1, line2)` (`*word*` = accent).
+- Check stills (times are CLIP-LOCAL seconds):
+  `cd studio && NODE_PATH=$(npm root -g) node render.js <story>/clip1 --stills <dir> 2,5.5,9`
+  then make a contact sheet (PIL) and LOOK at it. Check framing (0.4), arms, overlaps.
+- SFX: `studio/audio/<story>_sfx.py` - copy the latest one (e.g. `rebuilding_sfx.py`): it builds new
+  sounds, whispers (`whisper(text)`), reads events with `node render.js <story>/clipN --events`,
+  mixes `out/parts/<x>_sfx.wav`. Unknown names load from `public/sfx/<name>.wav`.
+- Music: `studio/audio/<story>_music.py` - copy the latest (`rebuilding_music.py`): PROG list,
+  pad CC11 curves, pedal piano, violin, one musical idea, writes `public/music/<name>.wav`.
+- Render: 3 clips in parallel in the background, then the rest:
+  `NODE_PATH=$(npm root -g) node render.js <story>/clipN out/parts/xN.mp4`.
+- Join WITH the outro:
+  `ffmpeg -f concat -safe 0 -i list.txt -i x_sfx.wav -i /home/user/claude/outro-VIDEO-SFX.mp4 -filter_complex
+  "[1:a]aresample=48000,aformat=channel_layouts=stereo,apad=whole_dur=DUR[fa];[0:v][fa][2:v][2:a]concat=n=2:v=1:a=1[v][a]"
+  -map "[v]" -map "[a]" -c:v libx264 -preset slow -crf 17 -pix_fmt yuv420p -r 30 -c:a aac -b:a 256k <story>-VIDEO-SFX.mp4`
+  and the music + `outro-MUSIC.m4a` the same way. Verify with `ffmpeg -v error -i f -f null -`.
+- Shorts = re-edit of the film's shots: folder `studio/src/<story>-shorts/` with a copy of the
+  film's base.js and `short1.js` (copy `rebuilding-shorts/short1.js`): SEGS =
+  [filmStart, filmEnd, dxScreenPx, zoomFactor, dyScreenPx]; stop on a cliffhanger; end card
+  "Visit the channel / for the full video." Audio: copy `audio/rebuilding_short_audio.py`, then
+  mix music at -10 dB into ONE FINAL file. Re-check EVERY segment's stills in vertical - wide
+  shots often cut people at the sides (use dx and a smaller zoom).
+- Known pitfalls: `onBed()` redraws the whole room (draw extra props AFTER it); `kitchen()` shows
+  'DIET' unless `note:` is given; `corridor()` always says EXAM HALL (cover it if not an exam);
+  seated people behind a table use `hip: true, thigh: 20` + `pose('table', x, y, s, {hip:true,
+  tableY})`; a camera split must also shift `toScreen`; use python for text replacements
+  (sed breaks on special characters); never `rm` with variables in the path.
+- Git: only CLAUDE.md is committed, with `git -c user.email=<owner email> -c user.name=sheraz1212
+  commit` and the session trailers, then `git push -q origin main` and copy it to
+  `/home/user/CLAUDE.md`. Code and videos never go to GitHub.
+
 ## Production pipeline (how videos are built)
 - Build every video with the canvas pipeline in `studio/` (read `studio/HOW-IT-WORKS.md`):
   HTML canvas 2D + plain JavaScript, rendered by Playwright/Chromium (`studio/render.js`),
@@ -20,9 +151,9 @@ These rules apply to every video made in this project.
 - Before any full render: 6-9 check stills per clip, LOOK at them, fix, check again.
 - After joining: verify with `ffmpeg -v error -i file.mp4 -f null -` (must print nothing).
 - Captions get a dark stroke so they stay readable over a cream body.
-- START EVERY NEW STORY FROM A FABLE STORY AS TEMPLATE: copy a folder like
-  `studio/src/one-word/` (base.js + clip files) and `studio/audio/one_word_sfx.py` /
-  `one_word_music.py`, then change places, shots, sounds and notes. Keep Fable's numbers.
+- START EVERY NEW STORY FROM THE LATEST STORY AS TEMPLATE (see 0.8): copy `studio/src/rebuilding/base.js`
+  and the latest `studio/audio/*_sfx.py` / `*_music.py`, then change places, shots, sounds and notes.
+  Keep Fable's look numbers.
 
 ### FABLE LOOK + MOTION (copy exactly - this is the channel's style now)
 - Frame: 1920x1080, 30 fps, black letterbox bars 60 px top and bottom, vignette (radial,
@@ -159,7 +290,7 @@ These rules apply to every video made in this project.
   handwriting / pen-on-paper sound effect while the text writes on.
 - A black screen with one centred line may be used mid-story as a chapter break.
 - The last scene mirrors the first scene (same place, same shot) but changed.
-- Every video ENDS on a black screen with one short lesson for the viewer (max ~6 words),
+- Every video ENDS on a black screen with one short lesson for the viewer (max ~6 words), followed by the 7 s channel outro (see 0.5),
   e.g. "Call while you can." It is the takeaway of the whole story.
 
 ## CLARITY FIRST (the biggest rule)
@@ -192,7 +323,7 @@ These rules apply to every video made in this project.
 - A time counter can show passing time (WEEK 1 -> 11 bottom-right) next to the symbol.
 
 ## Channel concept
-- Silent 2D animated short films for a US audience, 2:40-3:30 long, landscape.
+- Silent 2D animated short films for a US audience, 2:30-4:00 long (flexible, never stretched), landscape.
 - Topics: modern everyday struggles young adults relate to: phone/gaming/social media habits,
   procrastination, perfectionism, comparison, loneliness, people-pleasing, overthinking,
   health habits, self-doubt, quitting bad habits (sensitive habits are fine if never shown
@@ -281,7 +412,7 @@ people (parent, friend, rival); 3-4 core locations that come back again and agai
 it around; vary the story type; never copy stories, characters or signature visuals.
 
 ## How to write a story outline (after I pick an idea)
-- 2:40-3:30, built from 5-6 clips of 30-35 seconds each.
+- 2:30-4:00 (flexible), built from 5-6 clips of 30-35 seconds each.
 - Structure (see STORY METHOD): hook scene from second 0 -> 4-5 different situations of the
   same lesson, each followed by the symbol dropping -> low point ("he did it to himself") ->
   wisdom lines + tiny decision -> the same situations mirrored, the symbol climbing back ->
