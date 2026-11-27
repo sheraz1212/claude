@@ -40,6 +40,7 @@ import {CardThumbPressure, CardThumbStress} from './CardThumb';
 import {StringThumb} from './StringThumb';
 import {WallThumb} from './WallThumb';
 import {GoldThumb} from './GoldThumb';
+import {HerThumb} from './HerThumb';
 import {HeroSheet} from './HeroSheet';
 import {RestClip1} from './rest/Clip1';
 import {RestClip2} from './rest/Clip2';
@@ -207,6 +208,7 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="String-Thumb" component={StringThumb} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="Wall-Thumb" component={WallThumb} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="Gold-Thumb" component={GoldThumb} durationInFrames={1} fps={FPS} width={1280} height={720} />
+    <Composition id="Her-Thumb" component={HerThumb} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="Hero-Sheet" component={HeroSheet} durationInFrames={1} fps={FPS} width={W} height={H} />
     <Composition id="Rest-Clip1" component={RestClip1} durationInFrames={32 * FPS} fps={FPS} width={W} height={H} />
     <Composition id="Rest-Clip2" component={RestClip2} durationInFrames={33 * FPS} fps={FPS} width={W} height={H} />
