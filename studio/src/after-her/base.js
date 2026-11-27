@@ -1300,13 +1300,13 @@ function cRoom(g, t, o = {}) {
 }
 function cBedFront(g) { rr(g, 160, 664, 700, 62, 22); g.fillStyle = '#2fa39a'; g.fill(); g.strokeStyle = C.line; g.lineWidth = 2.5; g.stroke(); }
 function cOnBed(g, t, o = {}) { cRoom(g, t, o); if (o.behind) o.behind(); const r = Hero(g, { x: SIT[0], y: SIT[1], hip: true, thigh: 20, s: SS, face: { look: [0.6, 0.2], sad: 0.5, blink: blink(t, 0.6) }, ...(o.hero || {}) }, { dir: 1, amt: 0.3, dim: 0.02 }); if (o.mid) o.mid(r); cBedFront(g); return r; }
-// HER MEMORY: a soft, see-through pink version of her (drawn on its own layer so it is evenly transparent)
+// HER MEMORY: a grey, slightly see-through version of her (drawn on its own layer so it is evenly transparent)
 let _HL;
 function memoryHer(g, x, y, s, a, o = {}) {
   if (a <= 0) return null; if (!_HL) _HL = mk(W, H);
   const l = _HL.getContext('2d'); noCam(l); l.clearRect(0, 0, W, H); l.setTransform(g.getTransform());
-  const r = person(l, { x, y, s, col: '#ffc2d1', acc: 'longhair', accCol: '#e07a95', line: '#e58aa2', ...o, face: { smile: 0.6, look: [0.6, 0], ...(o.face || {}) } });
-  g.save(); noCam(g); g.globalAlpha = a * 0.55; g.shadowColor = ROSE; g.shadowBlur = 30; g.drawImage(_HL, 0, 0); g.restore();
+  const r = person(l, { x, y, s, col: '#A9A9B4', acc: 'longhair', accCol: '#3a3440', ...o, face: { smile: 0.6, look: [0.6, 0], ...(o.face || {}) } });
+  g.save(); noCam(g); g.globalAlpha = a * 0.85; g.drawImage(_HL, 0, 0); g.restore();
   return r;
 }
 // rose petals / sparkles (her memory dissolving)
